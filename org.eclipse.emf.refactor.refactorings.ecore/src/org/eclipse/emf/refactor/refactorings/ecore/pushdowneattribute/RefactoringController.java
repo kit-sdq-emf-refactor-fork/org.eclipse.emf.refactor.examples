@@ -2,7 +2,7 @@
  * <copyright>
  * </copyright>
  *
- * $Id: RefactoringController.java,v 1.1 2011/01/19 12:04:37 tarendt Exp $
+ * $Id: RefactoringController.java,v 1.2 2011/01/20 13:43:01 tarendt Exp $
  */
  package org.eclipse.emf.refactor.refactorings.ecore.pushdowneattribute;
 
@@ -13,6 +13,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.refactor.common.core.EmfRefactoring;
 import org.eclipse.emf.refactor.common.core.IController;
@@ -179,6 +180,20 @@ public final class RefactoringController implements IController{
 					result.addFatalError("EClass '" + containingEClass.getName() + 
 													"' is not eSuperType of another EClass!");
 				}
+				// initial check 2: each sub EClass of the containing EClass must not
+				// have an EStructuralFeature (inherited by another super EClass) with 
+				// the same name as the selected EAttribute
+				for (EClass eSubClass : eSubClasses) {
+					for (EStructuralFeature eStrFeat : 
+								eSubClass.getEAllStructuralFeatures()) {
+						if (eStrFeat != selectedEAttribute && 
+								eStrFeat.getName().equals(selectedEAttribute.getName())) {
+							result.addFatalError("Sub EClass '" + eSubClass.getName() + 
+										"' already contains an EStructuralFeature named '" + 
+										selectedEAttribute.getName() +"'!");
+						}
+					}
+				}				
 				// end custom code
 				return result;
 		}

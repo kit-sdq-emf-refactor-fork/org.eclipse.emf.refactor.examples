@@ -2,7 +2,7 @@
  * <copyright>
  * </copyright>
  *
- * $Id: RefactoringController.java,v 1.1 2011/01/19 12:04:37 tarendt Exp $
+ * $Id: RefactoringController.java,v 1.2 2011/01/20 13:48:01 tarendt Exp $
  */
  package org.eclipse.emf.refactor.refactorings.ecore.pushdowneoperation;
 
@@ -182,8 +182,9 @@ public final class RefactoringController implements IController{
 				// initial check 2: there is no sub EClass containing an EOperation
 				// with the same signature as the selected EOperation
 				for (EClass eClass : eSubClasses) {
-					for (EOperation eOperation : eClass.getEOperations()) {
-						if (RefactoringHelper.haveSameSignatures
+					for (EOperation eOperation : eClass.getEAllOperations()) {
+						if (eOperation != selectedEOperation &&								
+								RefactoringHelper.haveSameSignatures
 															(eOperation, selectedEOperation)) {
 							result.addFatalError("Sub EClass '" + eClass.getName() + 
 												"' contains an EOperation with the same " +
