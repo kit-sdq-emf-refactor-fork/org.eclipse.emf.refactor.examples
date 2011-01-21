@@ -2,7 +2,7 @@
  * <copyright>
  * </copyright>
  *
- * $Id: RefactoringDataManagement.java,v 1.1 2011/01/19 12:04:37 tarendt Exp $
+ * $Id: RefactoringDataManagement.java,v 1.2 2011/01/21 19:17:36 tarendt Exp $
  */
  package org.eclipse.emf.refactor.refactorings.ecore.moveeattribute;
 
@@ -34,8 +34,8 @@ public class RefactoringDataManagement extends DataManagementAdapter {
 	 */
 	private void addPorts(){
 		this.inPorts.add
-			(new Port<org.eclipse.emf.ecore.EReference>
-				(SELECTEDEOBJECT, org.eclipse.emf.ecore.EReference.class));
+			(new Port<org.eclipse.emf.ecore.EAttribute>
+				(SELECTEDEOBJECT, org.eclipse.emf.ecore.EAttribute.class));
 		this.inPorts.add
 			(new Port<String>
 				("eClassName", String.class, "unspecified"));		
@@ -50,7 +50,7 @@ public class RefactoringDataManagement extends DataManagementAdapter {
 	@Override
 	public void preselect(List<EObject> selection) {
 		getInPortByName(SELECTEDEOBJECT).
-				setValue((org.eclipse.emf.ecore.EReference) selection.get(0));
+				setValue((org.eclipse.emf.ecore.EAttribute) selection.get(0));
 	}
 
 }
