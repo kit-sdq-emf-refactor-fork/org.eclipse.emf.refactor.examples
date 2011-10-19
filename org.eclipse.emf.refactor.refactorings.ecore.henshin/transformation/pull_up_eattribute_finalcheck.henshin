@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <henshin:TransformationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2010/Henshin" xmi:id="_H5pVgCJJEeCUE7BCWgFWOw" name="transformation system">
-  <rules xmi:id="_0re94CJQEeCUE7BCWgFWOw" description="The containing EClass does not have an eSuperType with the specified name!" name="check_input" activated="true">
+  <rules xmi:id="_0re94CJQEeCUE7BCWgFWOw" description="The containing EClass does not have an eSuperType with the specified name!" name="check_input">
     <parameters xmi:id="_3bJCECJQEeCUE7BCWgFWOw" name="selectedEAttribute"/>
     <parameters xmi:id="_7HILoCJQEeCUE7BCWgFWOw" name="superEClass"/>
     <lhs xmi:id="_0re94SJQEeCUE7BCWgFWOw" name="LHS">
@@ -45,7 +45,7 @@
     <mappings xmi:id="_N2vscCJREeCUE7BCWgFWOw" origin="_-VMqICJQEeCUE7BCWgFWOw" image="_N2spISJREeCUE7BCWgFWOw"/>
     <mappings xmi:id="_N2yIsCJREeCUE7BCWgFWOw" origin="_CpS8kSJREeCUE7BCWgFWOw" image="_N2vsciJREeCUE7BCWgFWOw"/>
   </rules>
-  <rules xmi:id="_Sg4D0CJSEeCUE7BCWgFWOw" description="There is a sibling EClass that does not have an equivalent EAttribute!" name="check_equivalents" activated="true">
+  <rules xmi:id="_Sg4D0CJSEeCUE7BCWgFWOw" description="There is a sibling EClass that does not have an equivalent EAttribute!" name="check_equivalents">
     <parameters xmi:id="_UW1f4CJSEeCUE7BCWgFWOw" name="selectedEAttribute"/>
     <parameters xmi:id="_ckBjwCJSEeCUE7BCWgFWOw" name="eAttributeName"/>
     <parameters xmi:id="_i2KQMCJSEeCUE7BCWgFWOw" name="eAttributeId"/>
@@ -160,7 +160,7 @@
     <mappings xmi:id="_HrfZMCJTEeCUE7BCWgFWOw" origin="_8vBroSJSEeCUE7BCWgFWOw" image="_HrcV5CJTEeCUE7BCWgFWOw"/>
   </rules>
   <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
-  <transformationUnits xsi:type="henshin:IndependentUnit" xmi:id="_L92x0CJJEeCUE7BCWgFWOw" description="" name="mainUnit" activated="true" subUnits="_0re94CJQEeCUE7BCWgFWOw _Sg4D0CJSEeCUE7BCWgFWOw">
+  <transformationUnits xsi:type="henshin:IndependentUnit" xmi:id="_L92x0CJJEeCUE7BCWgFWOw" description="" name="mainUnit" subUnits="_0re94CJQEeCUE7BCWgFWOw _Sg4D0CJSEeCUE7BCWgFWOw">
     <parameters xmi:id="_NOvx8CJJEeCUE7BCWgFWOw" name="selectedEObject"/>
     <parameters xmi:id="_OTU0YCJJEeCUE7BCWgFWOw" name="eClassName"/>
     <parameterMappings xmi:id="_rBV-YCJREeCUE7BCWgFWOw" source="_NOvx8CJJEeCUE7BCWgFWOw" target="_3bJCECJQEeCUE7BCWgFWOw"/>

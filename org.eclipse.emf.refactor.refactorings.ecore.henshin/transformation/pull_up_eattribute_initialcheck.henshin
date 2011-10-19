@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <henshin:TransformationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2010/Henshin" xmi:id="_9qahYCJIEeCUE7BCWgFWOw" name="transformation system">
-  <rules xmi:id="_JcFRQCJMEeCUE7BCWgFWOw" description="The containing EClass has no eSuperTypes!" name="check_superEClass" activated="true">
+  <rules xmi:id="_JcFRQCJMEeCUE7BCWgFWOw" description="The containing EClass has no eSuperTypes!" name="check_superEClass">
     <parameters xmi:id="_Ldw1ICJMEeCUE7BCWgFWOw" name="selectedEAttribute"/>
     <lhs xmi:id="_JcFRQSJMEeCUE7BCWgFWOw" name="LHS">
       <nodes xmi:id="_Nm2okSJMEeCUE7BCWgFWOw" name="selectedEAttribute" incoming="_e4DDkCJMEeCUE7BCWgFWOw">
@@ -42,7 +42,7 @@
     <mappings xmi:id="_gKh_ICJMEeCUE7BCWgFWOw" origin="_R3ewQSJMEeCUE7BCWgFWOw" image="_gKgJ8iJMEeCUE7BCWgFWOw"/>
   </rules>
   <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
-  <transformationUnits xsi:type="henshin:IndependentUnit" xmi:id="_BFL_ICJJEeCUE7BCWgFWOw" description="" name="mainUnit" activated="true" subUnits="_JcFRQCJMEeCUE7BCWgFWOw">
+  <transformationUnits xsi:type="henshin:IndependentUnit" xmi:id="_BFL_ICJJEeCUE7BCWgFWOw" description="" name="mainUnit" subUnits="_JcFRQCJMEeCUE7BCWgFWOw">
     <parameters xmi:id="_CaXpYCJJEeCUE7BCWgFWOw" name="selectedEObject"/>
     <parameters xmi:id="_DwfHwCJJEeCUE7BCWgFWOw" name="eClassName"/>
     <parameterMappings xmi:id="_4xYZECJMEeCUE7BCWgFWOw" source="_CaXpYCJJEeCUE7BCWgFWOw" target="_Ldw1ICJMEeCUE7BCWgFWOw"/>

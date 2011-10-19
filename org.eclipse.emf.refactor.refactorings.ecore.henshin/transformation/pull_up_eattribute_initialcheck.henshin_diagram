@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2010/Henshin" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_S3wFAO9hEeCQ_MU5SUDLqQ" type="Henshin" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_S4Wh8O9hEeCQ_MU5SUDLqQ" type="2001" fontName="Segoe UI" italic="true" fillColor="16114135" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4Wh8u9hEeCQ_MU5SUDLqQ" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4Wh8-9hEeCQ_MU5SUDLqQ" type="7001">
+      <children xmi:type="notation:Shape" xmi:id="_S4Wh-O9hEeCQ_MU5SUDLqQ" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4Wh-u9hEeCQ_MU5SUDLqQ" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4Wh--9hEeCQ_MU5SUDLqQ" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4Wh_O9hEeCQ_MU5SUDLqQ" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_S4Wh_e9hEeCQ_MU5SUDLqQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_S4Wh_u9hEeCQ_MU5SUDLqQ"/>
+        </children>
+        <element xmi:type="henshin:Node" href="pull_up_eattribute_initialcheck.henshin#_Nm2okSJMEeCUE7BCWgFWOw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4Wh-e9hEeCQ_MU5SUDLqQ" x="38" y="357"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_S4Wh_-9hEeCQ_MU5SUDLqQ" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4WiAe9hEeCQ_MU5SUDLqQ" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4WiAu9hEeCQ_MU5SUDLqQ" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4WiA-9hEeCQ_MU5SUDLqQ" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_S4WiBO9hEeCQ_MU5SUDLqQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_S4WiBe9hEeCQ_MU5SUDLqQ"/>
+        </children>
+        <element xmi:type="henshin:Node" href="pull_up_eattribute_initialcheck.henshin#_R3ewQSJMEeCUE7BCWgFWOw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4WiAO9hEeCQ_MU5SUDLqQ" x="122" y="174"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_S4WiBu9hEeCQ_MU5SUDLqQ" type="3001" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4WiCO9hEeCQ_MU5SUDLqQ" type="5002"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4WiCe9hEeCQ_MU5SUDLqQ" type="5003"/>
+        <children xmi:type="notation:DecorationNode" xmi:id="_S4WiCu9hEeCQ_MU5SUDLqQ" type="7002">
+          <styles xmi:type="notation:SortingStyle" xmi:id="_S4WiC-9hEeCQ_MU5SUDLqQ"/>
+          <styles xmi:type="notation:FilteringStyle" xmi:id="_S4WiDO9hEeCQ_MU5SUDLqQ"/>
+        </children>
+        <element xmi:type="henshin:Node" href="pull_up_eattribute_initialcheck.henshin#_n5Ci8CJMEeCUE7BCWgFWOw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4WiB-9hEeCQ_MU5SUDLqQ" x="129" y="31"/>
+      </children>
+    </children>
+    <element xmi:type="henshin:Rule" href="pull_up_eattribute_initialcheck.henshin#_JcFRQCJMEeCUE7BCWgFWOw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4Wh8e9hEeCQ_MU5SUDLqQ" x="25" y="14" width="280" height="509"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_S4Wh9O9hEeCQ_MU5SUDLqQ" type="2002" fontName="Segoe UI" italic="true" fillColor="14808535" lineColor="0">
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4Wh9u9hEeCQ_MU5SUDLqQ" type="5004"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4Wh9-9hEeCQ_MU5SUDLqQ" type="7003"/>
+    <element xmi:type="henshin:IndependentUnit" href="pull_up_eattribute_initialcheck.henshin#_BFL_ICJJEeCUE7BCWgFWOw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S4Wh9e9hEeCQ_MU5SUDLqQ" x="910" y="243"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_S3wFAe9hEeCQ_MU5SUDLqQ"/>
+  <element xmi:type="henshin:TransformationSystem" href="pull_up_eattribute_initialcheck.henshin#_9qahYCJIEeCUE7BCWgFWOw"/>
+  <edges xmi:type="notation:Connector" xmi:id="_S4fr4O9hEeCQ_MU5SUDLqQ" type="4001" source="_S4Wh_-9hEeCQ_MU5SUDLqQ" target="_S4Wh-O9hEeCQ_MU5SUDLqQ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4fr4-9hEeCQ_MU5SUDLqQ" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_S4fr5O9hEeCQ_MU5SUDLqQ" x="-34" y="65"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4fr5e9hEeCQ_MU5SUDLqQ" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_S4fr5u9hEeCQ_MU5SUDLqQ" x="-11" y="58"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_S4fr4e9hEeCQ_MU5SUDLqQ" fontName="Segoe UI"/>
+    <element xmi:type="henshin:Edge" href="pull_up_eattribute_initialcheck.henshin#_e4DDkCJMEeCUE7BCWgFWOw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S4fr4u9hEeCQ_MU5SUDLqQ" points="[38, -8, -12, 2]$[-48, 9, -98, 19]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_S4fr5-9hEeCQ_MU5SUDLqQ" type="4001" source="_S4Wh_-9hEeCQ_MU5SUDLqQ" target="_S4WiBu9hEeCQ_MU5SUDLqQ">
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4fr6u9hEeCQ_MU5SUDLqQ" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_S4fr6-9hEeCQ_MU5SUDLqQ" x="16" y="-58"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_S4fr7O9hEeCQ_MU5SUDLqQ" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_S4fr7e9hEeCQ_MU5SUDLqQ" x="-3" y="45"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_S4fr6O9hEeCQ_MU5SUDLqQ" fontName="Segoe UI"/>
+    <element xmi:type="henshin:Edge" href="pull_up_eattribute_initialcheck.henshin#_pFM0ECJMEeCUE7BCWgFWOw"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S4fr6e9hEeCQ_MU5SUDLqQ" points="[2, 26, 0, 16]$[0, -16, -2, -26]"/>
+  </edges>
+</notation:Diagram>
