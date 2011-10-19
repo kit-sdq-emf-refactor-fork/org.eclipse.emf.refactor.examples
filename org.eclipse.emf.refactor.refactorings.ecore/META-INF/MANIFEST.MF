@@ -4,7 +4,6 @@ Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
  ,org.eclipse.ltk.ui.refactoring,org.eclipse.emf.refactor.common,org.e
  clipse.emf.refactor.runtime
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 0.5.1.vqualifier
 Bundle-Name: Ecore
 Bundle-ManifestVersion: 2
 Bundle-Activator: org.eclipse.emf.refactor.refactorings.ecore.Activato
@@ -12,4 +11,5 @@ Bundle-Activator: org.eclipse.emf.refactor.refactorings.ecore.Activato
 Bundle-SymbolicName: org.eclipse.emf.refactor.refactorings.ecore;singl
  eton:=true
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Version: 0.6.0.qualifier
 
