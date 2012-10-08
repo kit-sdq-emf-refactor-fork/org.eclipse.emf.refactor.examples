@@ -5,8 +5,8 @@ Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
 Bundle-ActivationPolicy: lazy
 Bundle-Version: 0.7.0.qualifier
 Bundle-Name: MetricsEcore
-Bundle-ManifestVersion: 2
 Bundle-Activator: org.eclipse.emf.refactor.metrics.ecore.Activator
+Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.eclipse.emf.refactor.metrics.ecore;singleton:
  =true
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
