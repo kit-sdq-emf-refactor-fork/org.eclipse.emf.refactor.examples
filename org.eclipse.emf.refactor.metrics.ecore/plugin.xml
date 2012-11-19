@@ -72,5 +72,13 @@
       metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
       metric_name="HAGGEC">
 </metric>
+<metric
+      id="org.eclipse.emf.refactor.metrics.ecore.maxditec"
+      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.MAXDITEC"
+      metric_context="EClass"
+      metric_description="Depth of Inheritance Tree (maximum due to multiple inheritance)."
+      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+      metric_name="MAXDITEC">
+</metric>
 </extension>
 </plugin>
