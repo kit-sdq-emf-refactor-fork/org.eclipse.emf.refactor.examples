@@ -64,5 +64,13 @@
       metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
       metric_name="NCEAEC">
 </metric>
+<metric
+      id="org.eclipse.emf.refactor.metrics.ecore.haggec"
+      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.HAGGEC"
+      metric_context="EClass"
+      metric_description="Length of the longest path to the leaves in the aggregation hierarchy."
+      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+      metric_name="HAGGEC">
+</metric>
 </extension>
 </plugin>
