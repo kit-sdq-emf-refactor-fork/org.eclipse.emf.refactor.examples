@@ -7,9 +7,9 @@ import java.util.List;
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.refactor.smells.interfaces.IModelSmellFinderClass;
+import org.eclipse.emf.refactor.smells.interfaces.IModelSmellFinder;
 
-public final class UnnamedEClass implements IModelSmellFinderClass {
+public final class UnnamedEClass implements IModelSmellFinder {
 
 	@Override
 	public LinkedList<LinkedList<EObject>> findSmell(EObject root) {
