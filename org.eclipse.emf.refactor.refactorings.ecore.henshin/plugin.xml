@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
-<extension point="org.eclipse.emf.refactor.common.Refactoring">
+<extension point="org.eclipse.emf.refactor.refactorings">
 <refactoring controller="org.eclipse.emf.refactor.refactorings.ecore.henshin.moveeattribute.RefactoringController" gui="org.eclipse.emf.refactor.refactorings.ecore.henshin.moveeattribute.RefactoringGuiHandler" id="MoveEAttributeUsingHenshin" menulabel="move (using henshin)" namespaceUri="http://www.eclipse.org/emf/2002/Ecore"/>
 <refactoring controller="org.eclipse.emf.refactor.refactorings.ecore.henshin.pullupeattributeusinghenshin.RefactoringController" gui="org.eclipse.emf.refactor.refactorings.ecore.henshin.pullupeattributeusinghenshin.RefactoringGuiHandler" id="PullUpEAttributeUsingHenshin" menulabel="pull up (using henshin)" namespaceUri="http://www.eclipse.org/emf/2002/Ecore"/>
 <refactoring controller="org.eclipse.emf.refactor.refactorings.ecore.henshin.pushdowneattributeusinghenshin.RefactoringController" gui="org.eclipse.emf.refactor.refactorings.ecore.henshin.pushdowneattributeusinghenshin.RefactoringGuiHandler" id="PushDownEAttributeUsingHenshin" menulabel="push down (using henshin)" namespaceUri="http://www.eclipse.org/emf/2002/Ecore"/>
