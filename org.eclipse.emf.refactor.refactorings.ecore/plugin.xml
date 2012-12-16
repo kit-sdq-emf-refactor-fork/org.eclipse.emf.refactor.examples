@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
-<extension point="org.eclipse.emf.refactor.common.Refactoring">
+<extension point="org.eclipse.emf.refactor.refactorings">
 <refactoring controller="org.eclipse.emf.refactor.refactorings.ecore.moveeattribute.RefactoringController" gui="org.eclipse.emf.refactor.refactorings.ecore.moveeattribute.RefactoringGuiHandler" id="MoveEAttribute" menulabel="Move EAttribute" namespaceUri="http://www.eclipse.org/emf/2002/Ecore"/>
 <refactoring controller="org.eclipse.emf.refactor.refactorings.ecore.renameepackage.RefactoringController" gui="org.eclipse.emf.refactor.refactorings.ecore.renameepackage.RefactoringGuiHandler" id="RenameEPackage" menulabel="Rename EPackage" namespaceUri="http://www.eclipse.org/emf/2002/Ecore"/>
 <refactoring controller="org.eclipse.emf.refactor.refactorings.ecore.renameeclass.RefactoringController" gui="org.eclipse.emf.refactor.refactorings.ecore.renameeclass.RefactoringGuiHandler" id="RenameEClass" menulabel="Rename EClass" namespaceUri="http://www.eclipse.org/emf/2002/Ecore"/>
