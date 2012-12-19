@@ -1,69 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 <extension point="org.eclipse.emf.refactor.metrics">
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nsupec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NSUPEC" metric_context="EClass" metric_description="Number of direct parent EClasses of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NSUPEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nsupec2" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NSUPEC2" metric_context="EClass" metric_description="Total number of ancestors of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NSUPEC2"/>
 <metric id="org.eclipse.emf.refactor.metrics.ecore.nepec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NEPEC" metric_context="EClass" metric_description="Total number of EParameters in EOperations of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NEPEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.neoec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NEOEC" metric_context="EClass" metric_description="Number of EOperations of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NEOEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.neaec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NEAEC" metric_context="EClass" metric_description="Number of EAttributes of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NEAEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.avepeoec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.AvEPEOEC" metric_context="EClass" metric_description="Average number of EParameters in EOperations of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="AvEPEOEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nsubec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NSUBEC" metric_context="EClass" metric_description="Number of direct child EClasses of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NSUBEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nsubec2" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NSUBEC2" metric_context="EClass" metric_description="Number of all child EClasses of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NSUBEC2"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nfeec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NFEEC" metric_context="EClass" metric_description="Number of features (EAttributes and EOperations) of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NFEEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nerec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NEREC" metric_context="EClass" metric_description="Total number of EReferences of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NEREC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nersec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NERSEC" metric_context="EClass" metric_description="Number of EReferences of the given EClass to itself." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NERSEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.neroec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NEROEC" metric_context="EClass" metric_description="Number of EReferences of the given EClass to other EClasses." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NEROEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.npecec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NPECEC" metric_context="EClass" metric_description="Number of EClasses being parts of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NPECEC"/>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.icepec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.ICEPEC" metric_context="EClass" metric_description="Number of EParameters within the EClass having another EClass or interface as type." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="ICEPEC"/>
-<metric
-      id="org.eclipse.emf.refactor.metrics.ecore.icepecec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.ICEPECEC"
-      metric_context="EClass"
-      metric_description="Number of EParameters within the EClass having another EClass as type."
-      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-      metric_name="ICEPECEC">
-</metric>
-<metric
-      id="org.eclipse.emf.refactor.metrics.ecore.icepeiec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.ICEPEIEC"
-      metric_context="EClass"
-      metric_description="Number of EParameters within the EClass having another interface as type."
-      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-      metric_name="ICEPEIEC">
-</metric>
-<metric id="org.eclipse.emf.refactor.metrics.ecore.ecepec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.ECEPEC" metric_context="EClass" metric_description="Number of EParameters within other EClasses having the given EClass as type." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="ECEPEC"/>
-<metric
-      id="org.eclipse.emf.refactor.metrics.ecore.ecerec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.ECEREC"
-      metric_context="EClass"
-      metric_description="Number of EReferences of other EClasses having the given EClass as type."
-      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-      metric_name="ECEREC">
-</metric>
-<metric
-      id="org.eclipse.emf.refactor.metrics.ecore.eceoec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.ECEOEC"
-      metric_context="EClass"
-      metric_description="Number of EReferences of other EClasses having the given EClass as type."
-      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-      metric_name="ECEOEC">
-</metric>
-<metric
-      id="org.eclipse.emf.refactor.metrics.ecore.nderoec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NDEROEC"
-      metric_context="EClass"
-      metric_description="Number of different EClasses being referenced by the given EClass."
-      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-      metric_name="NDEROEC">
-</metric>
-<metric
-      id="org.eclipse.emf.refactor.metrics.ecore.nceaec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NCEAEC"
-      metric_context="EClass"
-      metric_description="Number of constant EAttributes of the given EClass."
-      metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-      metric_name="NCEAEC">
-</metric>
 <metric
       id="org.eclipse.emf.refactor.metrics.ecore.haggec"
       metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.HAGGEC"

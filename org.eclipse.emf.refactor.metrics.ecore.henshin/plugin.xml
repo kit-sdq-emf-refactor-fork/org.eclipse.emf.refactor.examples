@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.refactor.metrics">
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.eceoec"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ECEOEC"
+            metric_context="EClass"
+            metric_description="Number of EReferences of other EClasses having the given EClass as type."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="ECEOEC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.ecerec"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ECEREC"
+            metric_context="EClass"
+            metric_description="Number of EReferences of other EClasses having the given EClass as type."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="ECEREC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.ecepec"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ECEPEC"
+            metric_context="EClass"
+            metric_description="Number of EParameters within other EClasses having the given EClass as type."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="ECEPEC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.icepeiec"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ICEPEIEC"
+            metric_context="EClass"
+            metric_description="Number of EParameters within the EClass having another interface as type."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="ICEPEIEC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.icepecec"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ICEPECEC"
+            metric_context="EClass"
+            metric_description="Number of EParameters within the EClass having another EClass as type."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="ICEPECEC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.icepec"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ICEPEC"
+            metric_context="EClass"
+            metric_description="Number of EParameters within the EClass having another EClass or interface as type."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="ICEPEC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.nsubec2"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.NSUBEC2"
+            metric_context="EClass"
+            metric_description="Number of all child EClasses of the given EClass."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="NSUBEC2">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.ecore.nsubec"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.NSUBEC"
+            metric_context="EClass"
+            metric_description="Number of direct child EClasses of the given EClass."
+            metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
+            metric_name="NSUBEC">
+      </metric>
+   </extension>
+
+</plugin>
