@@ -1,4 +1,4 @@
-package org.eclipse.emf.refactor.smells.ecore;
+package org.eclipse.emf.refactor.smells.ecore.henshin;
 
 import java.io.IOException;
 import java.net.URL;
@@ -8,7 +8,6 @@ import java.util.LinkedList;
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.emf.refactor.smells.henshin.managers.HenshinRuntimeManager;
 import org.eclipse.emf.refactor.smells.interfaces.IModelSmellFinder;
 
@@ -25,7 +24,7 @@ public final class SpeculativeGeneralityEClass implements IModelSmellFinder {
 	}
 	
 	private String getFullPath(String transformationPath){
-		URL url = FileLocator.find(org.eclipse.emf.refactor.smells.ecore.Activator.getDefault().getBundle(), 
+		URL url = FileLocator.find(Activator.getDefault().getBundle(), 
 				new Path(transformationPath), Collections.EMPTY_MAP);
 		URL fileUrl = null;
 		try {

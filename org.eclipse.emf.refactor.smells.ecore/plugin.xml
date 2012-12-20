@@ -10,20 +10,6 @@
             modelsmell_metamodel="http://www.eclipse.org/emf/2002/Ecore"
             modelsmell_name="Unnamed EClass">
       </modelsmell>
-      <modelsmell
-            id="org.eclipse.emf.refactor.smells.ecore.largeeclass" 
-            modelsmell_description="The model contains an EClass owning more features (EAttributes and EOperations) than the specified limit." 
-            modelsmell_finderclass="org.eclipse.emf.refactor.smells.ecore.LargeEClass"
-            modelsmell_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-            modelsmell_name="Large EClass">
-      </modelsmell>
-      <modelsmell
-            id="org.eclipse.emf.refactor.smells.ecore.speculativegeneralityeclass" 
-            modelsmell_description="The model contains an abstract EClass that is inherited by one concrete EClass only." 
-            modelsmell_finderclass="org.eclipse.emf.refactor.smells.ecore.SpeculativeGeneralityEClass"
-            modelsmell_metamodel="http://www.eclipse.org/emf/2002/Ecore"
-            modelsmell_name="Speculative Generality EClass">
-      </modelsmell>
    </extension>
 
 </plugin>
