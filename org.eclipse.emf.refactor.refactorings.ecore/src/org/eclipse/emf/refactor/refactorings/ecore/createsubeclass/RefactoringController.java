@@ -13,21 +13,21 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcoreFactory;
-import org.eclipse.emf.refactor.common.core.EmfRefactoring;
-import org.eclipse.emf.refactor.common.core.IController;
-import org.eclipse.emf.refactor.common.core.IDataManagement;
+import org.eclipse.emf.refactor.refactoring.core.Refactoring;
+import org.eclipse.emf.refactor.refactoring.interfaces.IController;
+import org.eclipse.emf.refactor.refactoring.interfaces.IDataManagement;
+import org.eclipse.emf.refactor.refactoring.runtime.ltk.LtkEmfRefactoringProcessorAdapter;
 import org.eclipse.emf.refactor.refactorings.ecore.RefactoringHelper;
-import org.eclipse.emf.refactor.runtime.ltk.LtkEmfRefactoringProcessorAdapter;
 import org.eclipse.ltk.core.refactoring.RefactoringStatus;
 import org.eclipse.ltk.core.refactoring.participants.RefactoringProcessor;
 
 public final class RefactoringController implements IController{
 
 	/**
-	 * EmfRefactoring supported by the controller.
+	 * Refactoring supported by the controller.
 	 * @generated
 	 */
-	private EmfRefactoring parent;
+	private Refactoring parent;
 	
 	/**
 	 * DataManagement object of the model refactoring.
@@ -49,26 +49,26 @@ public final class RefactoringController implements IController{
 	private InternalRefactoringProcessor refactoringProcessor = null;
 	
 	/**
-	 * Gets the EmfRefactoring supported by the controller.
-	 * @return EmfRefactoring supported by the controller.
+	 * Gets the Refactoring supported by the controller.
+	 * @return Refactoring supported by the controller.
 	 * @see org.eclipse.emf.refactor.common.core.IController#getParent()
 	 * @generated
 	 */
 	@Override
-	public EmfRefactoring getParent() {
+	public Refactoring getParent() {
 		return this.parent;
 	}
 	
 	/**
-	 * Sets the EmfRefactoring supported by the controller.
-	 * @param emfRefactoring EmfRefactoring supported by the controller.
+	 * Sets the Refactoring supported by the controller.
+	 * @param Refactoring Refactoring supported by the controller.
 	 * @see org.eclipse.emf.refactor.common.core.IController#
-	 * setParent(org.eclipse.emf.refactor.common.core.EmfRefactoring)
+	 * setParent(org.eclipse.emf.refactor.common.core.Refactoring)
 	 * @generated
 	 */
 	@Override
-	public void setParent(EmfRefactoring emfRefactoring) {
-		this.parent = emfRefactoring;
+	public void setParent(Refactoring Refactoring) {
+		this.parent = Refactoring;
 	}
 	
 	/**

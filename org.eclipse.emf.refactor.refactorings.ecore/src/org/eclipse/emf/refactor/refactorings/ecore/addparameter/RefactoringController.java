@@ -14,11 +14,11 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EParameter;
 import org.eclipse.emf.ecore.EcoreFactory;
-import org.eclipse.emf.refactor.common.core.EmfRefactoring;
-import org.eclipse.emf.refactor.common.core.IController;
-import org.eclipse.emf.refactor.common.core.IDataManagement;
+import org.eclipse.emf.refactor.refactoring.core.Refactoring;
+import org.eclipse.emf.refactor.refactoring.interfaces.IController;
+import org.eclipse.emf.refactor.refactoring.interfaces.IDataManagement;
+import org.eclipse.emf.refactor.refactoring.runtime.ltk.LtkEmfRefactoringProcessorAdapter;
 import org.eclipse.emf.refactor.refactorings.ecore.RefactoringHelper;
-import org.eclipse.emf.refactor.runtime.ltk.LtkEmfRefactoringProcessorAdapter;
 import org.eclipse.ltk.core.refactoring.RefactoringStatus;
 import org.eclipse.ltk.core.refactoring.participants.RefactoringProcessor;
 
@@ -28,7 +28,7 @@ public final class RefactoringController implements IController{
 	 * EmfRefactoring supported by the controller.
 	 * @generated
 	 */
-	private EmfRefactoring parent;
+	private Refactoring parent;
 	
 	/**
 	 * DataManagement object of the model refactoring.
@@ -56,7 +56,7 @@ public final class RefactoringController implements IController{
 	 * @generated
 	 */
 	@Override
-	public EmfRefactoring getParent() {
+	public Refactoring getParent() {
 		return this.parent;
 	}
 	
@@ -68,7 +68,7 @@ public final class RefactoringController implements IController{
 	 * @generated
 	 */
 	@Override
-	public void setParent(EmfRefactoring emfRefactoring) {
+	public void setParent(Refactoring emfRefactoring) {
 		this.parent = emfRefactoring;
 	}
 	

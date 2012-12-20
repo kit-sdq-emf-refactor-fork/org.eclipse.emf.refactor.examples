@@ -5,7 +5,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.ecore.change,
  org.eclipse.ltk.core.refactoring,
  org.eclipse.ltk.ui.refactoring,
- org.eclipse.emf.refactor.refactoring
+ org.eclipse.emf.refactor.refactoring;bundle-version="0.7.0",
+ org.eclipse.emf.refactor.refactoring.runtime;bundle-version="0.7.0"
 Bundle-ActivationPolicy: lazy
 Bundle-Name: RefactoringsEcore
 Bundle-ManifestVersion: 2

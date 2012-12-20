@@ -4,13 +4,13 @@
  *
  * $Id: RefactoringDataManagement.java,v 1.1 2011/01/19 12:04:37 tarendt Exp $
  */
- package org.eclipse.emf.refactor.refactorings.ecore.createreferencedeclass;
+package org.eclipse.emf.refactor.refactorings.ecore.createreferencedeclass;
 
 import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.refactor.runtime.DataManagementAdapter;
-import org.eclipse.emf.refactor.common.core.Port;
+import org.eclipse.emf.refactor.refactoring.core.Port;
+import org.eclipse.emf.refactor.refactoring.runtime.DataManagementAdapter;
 
 /**
  * Class for specific data concerning a model refactoring.
