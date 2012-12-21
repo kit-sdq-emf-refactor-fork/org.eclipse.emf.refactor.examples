@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- tests final check 3; fails because edatatypes not implemented yet -->
+<config>
+
+	<param>
+		<name>eParameterName</name>
+		<value>theParameter</value>
+	</param>	
+	<param>
+		<name>eType</name>
+		<value>EInt</value>
+	</param>
+
+	
+</config>

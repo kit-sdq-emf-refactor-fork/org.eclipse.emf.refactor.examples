@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- initial check 1 -->
+<config>
+
+	<param>
+		<name>eClassName</name>
+		<value>Testclass2</value>
+	</param>	
+
+	
+</config>

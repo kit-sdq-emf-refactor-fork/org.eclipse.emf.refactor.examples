@@ -138,6 +138,9 @@ public final class RefactoringController implements IController{
 				selectedEOperation.getEParameters().add(newEParameter);
 				// add EClassifier named eType to the new EParameter
 				newEParameter.setEType(containingEPackage.getEClassifier(eType));
+				if (newEParameter.getEType() == null) {
+					newEParameter.setEType(RefactoringHelper.getPrimitiveDataType(eType));
+				}
 				// end custom code
 			}
 		};
@@ -194,20 +197,25 @@ public final class RefactoringController implements IController{
 				if (! RefactoringHelper.isValidEParameterName(eParameterName)) {
 					String message = 
 							RefactoringHelper.getReasonForInvalidEParameterName(eParameterName);
+					System.out.println(message);
 					result.addFatalError(message);
 				}
 				// final check 2: the containing EOperation must not contain an EParameter
 				// with the specified name 
 				if (RefactoringHelper.containsEParameter
 												(selectedEOperation, eParameterName)) {
+					System.out.println("1");
 					result.addFatalError("There is already an EParameter in the " +
 											"containing EOperation named '" + eParameterName + "'!");
 				}
 				// final check 3: there must be an EClassifier named 'eType' in the containing
 				// EPackage of the containing EClass of the selected EOperation
 				if (containingEPackage.getEClassifier(eType) == null) {
-					result.addFatalError("There is no EClassifier named '" + eType + "' in the " +
-							"containing EPackage of the EClass owning the selected EOperation!");
+					if (! RefactoringHelper.isPrimitiveDataType(eType)) {
+						System.out.println("2");
+						result.addFatalError("There is no EClassifier named '" + eType + "' in the " +
+								"containing EPackage of the EClass owning the selected EOperation!");
+					}
 				} else {
 					// final check 4: the containing EClass of the containing EOperation must 
 					// not contain an EOperation having the same signature after adding the
@@ -217,6 +225,7 @@ public final class RefactoringController implements IController{
 						result.addFatalError("There is already an EOperation in the " +
 										"containing EClass named '" + selectedEOperation.getName() + 
 										"' having the same signature!");
+						System.out.println("3");
 					}
 				}
 				// end custom code

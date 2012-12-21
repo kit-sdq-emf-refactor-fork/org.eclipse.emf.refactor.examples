@@ -10,11 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.refactor.henshin.runtime.HenshinLtkEmfRefactoringProcessorAdapter;
-import org.eclipse.emf.refactor.henshin.runtime.HenshinRunner;
-import org.eclipse.emf.refactor.henshin.core.IHenshinController;
-import org.eclipse.emf.refactor.henshin.core.IHenshinDataManagement;
-import org.eclipse.emf.refactor.common.core.EmfRefactoring;
+import org.eclipse.emf.refactor.refactoring.core.Refactoring;
+import org.eclipse.emf.refactor.refactoring.henshin.interfaces.IHenshinController;
+import org.eclipse.emf.refactor.refactoring.henshin.interfaces.IHenshinDataManagement;
+import org.eclipse.emf.refactor.refactoring.henshin.managers.HenshinRuntimeManager;
+import org.eclipse.emf.refactor.refactoring.henshin.runtime.HenshinLtkEmfRefactoringProcessorAdapter;
 import org.eclipse.ltk.core.refactoring.participants.RefactoringProcessor;
 
 /**
@@ -24,10 +24,10 @@ import org.eclipse.ltk.core.refactoring.participants.RefactoringProcessor;
 public final class RefactoringController implements IHenshinController{
 
 	/**
-	 * EmfRefactoring supported by the controller.
+	 * Refactoring supported by the controller.
 	 * @generated
 	 */
-	private EmfRefactoring parent;
+	private Refactoring parent;
 	
 	/**
 	 * DataManagement object of the model refactoring.
@@ -43,12 +43,12 @@ public final class RefactoringController implements IHenshinController{
 	private List<EObject> selection = new ArrayList<EObject>();
 	
 	/**
-	 * HenshinRunner that executes Henshin transformations using 
+	 * HenshinRuntimeManager that executes Henshin transformations using 
 	 * the Henshin interpreter.
 	 * @generated
 	 */
-	private HenshinRunner henshinRunner = 
-					new HenshinRunner(new ArrayList<EObject>(0), dataManagement);
+	private HenshinRuntimeManager henshinRuntimeManager = 
+					new HenshinRuntimeManager(new ArrayList<EObject>(0), dataManagement);
 	
 	/**
 	 * Ltk RefactoringProcessor of the model refactoring.
@@ -57,25 +57,25 @@ public final class RefactoringController implements IHenshinController{
 	private InternalRefactoringProcessor refactoringProcessor = null;
 	
 	/**
-	 * Gets the EmfRefactoring supported by the controller.
-	 * @return EmfRefactoring supported by the controller.
+	 * Gets the Refactoring supported by the controller.
+	 * @return Refactoring supported by the controller.
 	 * @see org.eclipse.emf.refactor.common.core.IController#getParent()
 	 * @generated
 	 */
 	@Override
-	public EmfRefactoring getParent() {
+	public Refactoring getParent() {
 		return this.parent;
 	}
 	
 	/**
-	 * Sets the EmfRefactoring supported by the controller.
-	 * @param emfRefactoring EmfRefactoring supported by the controller.
+	 * Sets the Refactoring supported by the controller.
+	 * @param emfRefactoring Refactoring supported by the controller.
 	 * @see org.eclipse.emf.refactor.common.core.IController#
-	 * setParent(org.eclipse.emf.refactor.common.core.EmfRefactoring)
+	 * setParent(org.eclipse.emf.refactor.common.core.Refactoring)
 	 * @generated
 	 */
 	@Override
-	public void setParent(EmfRefactoring emfRefactoring) {
+	public void setParent(Refactoring emfRefactoring) {
 		this.parent = emfRefactoring;
 	}
 	
@@ -89,20 +89,6 @@ public final class RefactoringController implements IHenshinController{
 	@Override
 	public IHenshinDataManagement getDataManagementObject() {
 		return this.dataManagement;
-	}
-	
-	/**
-	 * Gets a HenshinRunner that executes Henshin transformations using 
-	 * the Henshin interpreter.
-	 * @return HenshinRunner that executes Henshin transformations using 
-	 * the Henshin interpreter.
-	 * @see org.eclipse.emf.refactor.henshin.core.IHenshinController#
-	 * getHenshinRunner()
-	 * @generated
-	 */
-	@Override
-	public HenshinRunner getHenshinRunner() {
-		return this.henshinRunner;
 	}
 
 	/**
@@ -127,7 +113,7 @@ public final class RefactoringController implements IHenshinController{
 	@Override
 	public void setSelection(List<EObject> selection) {
 		this.selection = selection;
-		this.henshinRunner = new HenshinRunner(this.selection, this.dataManagement);
+		this.henshinRuntimeManager = new HenshinRuntimeManager(this.selection, this.dataManagement);
 		this.refactoringProcessor = 
 				new InternalRefactoringProcessor(this.selection);
 	}	
@@ -145,14 +131,14 @@ public final class RefactoringController implements IHenshinController{
 			 */
 			@Override
 			public void run() {
-				henshinRunner = new HenshinRunner(selection, dataManagement);
-				henshinRunner.run();
+				henshinRuntimeManager = new HenshinRuntimeManager(selection, dataManagement);
+				henshinRuntimeManager.run();
 			}
 		};
 	}
 
 	/**
-	 * Internal class for providing an instance of a LTK RefactoringProcessor 
+	 * Internal class for providing an instance of a LTK RefactoringProcesor 
 	 * used for EMF model refactorings using Henshin transformations.	 
 	 * @generated
 	 */
@@ -168,6 +154,11 @@ public final class RefactoringController implements IHenshinController{
 				super(getParent(), selection, applyRefactoring());				
 		}
 		
+	}
+
+	@Override
+	public HenshinRuntimeManager getHenshinRuntimeManager() {
+		return henshinRuntimeManager;
 	}
 
 }

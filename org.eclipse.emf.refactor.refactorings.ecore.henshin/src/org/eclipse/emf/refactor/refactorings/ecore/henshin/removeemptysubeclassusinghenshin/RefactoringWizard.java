@@ -1,4 +1,5 @@
 /**
+
  * <copyright>
  * </copyright>
  *
@@ -6,8 +7,8 @@
  */
  package org.eclipse.emf.refactor.refactorings.ecore.henshin.removeemptysubeclassusinghenshin;
 
-import org.eclipse.emf.refactor.common.core.IController;
-import org.eclipse.emf.refactor.runtime.ltk.ui.AbstractRefactoringWizard;
+import org.eclipse.emf.refactor.refactoring.interfaces.IController;
+import org.eclipse.emf.refactor.refactoring.runtime.ltk.ui.AbstractRefactoringWizard;
 
 /**
  * Class used for providing an implementation of an LTK

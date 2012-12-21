@@ -5,9 +5,11 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.emf.ecore.change,
  org.eclipse.ltk.core.refactoring,
  org.eclipse.ltk.ui.refactoring,
- org.eclipse.emf.refactor.refactoring
+ org.eclipse.emf.refactor.refactoring;bundle-version="0.7.0",
+ org.eclipse.emf.refactor.refactoring.runtime;bundle-version="0.7.0",
+ org.eclipse.emf.refactor.refactoring.henshin;bundle-version="0.7.0"
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 0.6.0.qualifier
+Bundle-Version: 0.7.0
 Bundle-Name: Henshin
 Bundle-ManifestVersion: 2
 Bundle-Activator: org.eclipse.emf.refactor.refactorings.ecore.henshin.

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- test final check 1 -->
+<config>
+
+	<param>
+		<name>eParameterName</name>
+		<value>parameter name with whitespace</value>
+	</param>	
+	<param>
+		<name>eType</name>
+		<value>Testclass1</value>
+	</param>
+
+	
+</config>

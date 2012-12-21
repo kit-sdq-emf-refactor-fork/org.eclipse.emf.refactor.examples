@@ -7,9 +7,10 @@
  package org.eclipse.emf.refactor.refactorings.ecore.henshin.removeemptysupereclassusinghenshin;
 
 import java.util.List;
+
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.refactor.common.core.EmfRefactoring;
-import org.eclipse.emf.refactor.common.core.ui.IGuiHandler;
+import org.eclipse.emf.refactor.refactoring.core.Refactoring;
+import org.eclipse.emf.refactor.refactoring.interfaces.IGuiHandler;
 import org.eclipse.ltk.ui.refactoring.RefactoringWizard;
 
 /**
@@ -19,28 +20,28 @@ import org.eclipse.ltk.ui.refactoring.RefactoringWizard;
 public class RefactoringGuiHandler implements IGuiHandler {
 
 	/**
-	 * EmfRefactoring supported by the GuiHandler.
+	 * Refactoring supported by the GuiHandler.
 	 * @generated
 	 */
-	EmfRefactoring parent;
+	Refactoring parent;
 	
 	/**
 	 * @see org.eclipse.emf.refactor.common.core.ui.IGuiHandler#getParent()
 	 * @generated
 	 */
 	@Override
-	public EmfRefactoring getParent() {
+	public Refactoring getParent() {
 		return parent;
 	}
 
 	/**
 	 * @see org.eclipse.emf.refactor.common.core.ui.IGuiHandler#
-	 * setParent(org.eclipse.emf.refactor.common.core.EmfRefactoring)
+	 * setParent(org.eclipse.emf.refactor.common.core.Refactoring)
 	 * @generated
 	 */
 	@Override
-	public void setParent(EmfRefactoring emfRefactoring) {
-		this.parent = emfRefactoring;
+	public void setParent(Refactoring refactoring) {
+		this.parent = refactoring;
 	}
 		
 	/**

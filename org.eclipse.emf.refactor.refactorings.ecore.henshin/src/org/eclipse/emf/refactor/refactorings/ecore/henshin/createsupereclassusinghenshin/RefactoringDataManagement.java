@@ -9,10 +9,10 @@
 import java.util.List;
 
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.refactor.henshin.core.IHenshinDataManagement;
-import org.eclipse.emf.refactor.henshin.core.IHenshinInformation;
-import org.eclipse.emf.refactor.runtime.DataManagementAdapter;
-import org.eclipse.emf.refactor.common.core.Port;
+import org.eclipse.emf.refactor.refactoring.core.Port;
+import org.eclipse.emf.refactor.refactoring.henshin.interfaces.IHenshinDataManagement;
+import org.eclipse.emf.refactor.refactoring.henshin.interfaces.IHenshinInformation;
+import org.eclipse.emf.refactor.refactoring.runtime.DataManagementAdapter;
 
 /**
  * Class for specific data concerning a model refactoring.

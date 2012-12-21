@@ -5,6 +5,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EObject;
@@ -14,6 +15,7 @@ import org.eclipse.emf.ecore.EParameter;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.ETypedElement;
 import org.eclipse.emf.ecore.EcoreFactory;
+import org.eclipse.emf.ecore.impl.EcorePackageImpl;
 
 public abstract class RefactoringHelper {
 
@@ -53,6 +55,9 @@ public abstract class RefactoringHelper {
 		if (hasWhiteSpaces(str)) {
 			return false;
 		}
+		if (! startsWithLetter(str)) {
+			return false;
+		}
 		if (! startsWithUpperCase(str)) {
 			return false;
 		}	
@@ -63,6 +68,9 @@ public abstract class RefactoringHelper {
 		if (hasWhiteSpaces(str)) {
 			return "Invalid name: It contains whitespaces!";
 		}
+		if (! startsWithLetter(str)) {
+			return "Invalid name: It doesn't start with a letter!";
+		}
 		if (! startsWithUpperCase(str)) {
 			return "Invalid name: It starts with an lower case letter!";
 		}
@@ -71,6 +79,9 @@ public abstract class RefactoringHelper {
 
 	private static boolean isValidLowerCaseString(String str) {
 		if (hasWhiteSpaces(str)) {
+			return false;
+		}
+		if (! startsWithLetter(str)) {
 			return false;
 		}
 		if (! startsWithLowerCase(str)) {
@@ -83,6 +94,9 @@ public abstract class RefactoringHelper {
 		if (hasWhiteSpaces(str)) {
 			return "Invalid name: It contains whitespaces!";
 		}
+		if (! startsWithLetter(str)) {
+			return "Invalid name: It doesn't start with a letter!";
+		}
 		if (! startsWithLowerCase(str)) {
 			return "Invalid name: It starts with an upper case letter!";
 		}	
@@ -91,6 +105,9 @@ public abstract class RefactoringHelper {
 
 	private static boolean isValidCompletelyUpperCaseString(String str) {
 		if (hasWhiteSpaces(str)) {
+			return false;
+		}
+		if (! startsWithLetter(str)) {
 			return false;
 		}
 		if (! isCompletelyUpperCase(str)) {
@@ -103,14 +120,21 @@ public abstract class RefactoringHelper {
 		if (hasWhiteSpaces(str)) {
 			return "Invalid name: It contains whitespaces!";
 		}
+		if (! startsWithLetter(str)) {
+			return "Invalid name: It doesn't start with a letter!";
+		}
 		if (! isCompletelyUpperCase(str)) {
 			return "Invalid name: It contains lower case letters!";
 		}
 		return "";
 	}
 
+	private static boolean startsWithLetter(String str) {
+		return Character.isLetter(str.charAt(0));
+	}
+
 	private static boolean isCompletelyUpperCase(String str) {
-		String str_2 =  str.toUpperCase();
+		String str_2 =  str.toUpperCase();		
 		return str.equals(str_2);
 	}	
 
@@ -324,8 +348,7 @@ public abstract class RefactoringHelper {
 		if (! eClass.getESuperTypes().isEmpty()) {
 			return "The EClass has an eSuperType.";
 		}
-		for (TreeIterator iter = eClass.eResource().getAllContents(); 
-																					iter.hasNext(); ) {
+		for (TreeIterator iter = eClass.eResource().getAllContents(); iter.hasNext(); ) {
 			EObject eObject = (EObject) iter.next();
 			if (eObject instanceof ETypedElement) {
 				ETypedElement eTypedElement = (ETypedElement) eObject;
@@ -392,6 +415,24 @@ public abstract class RefactoringHelper {
 			}
 		}
 		return false;
+	}
+
+	public static boolean isPrimitiveDataType(String eType) {
+		if (eType.equals("EInt")) return true;
+		if (eType.equals("EBoolean")) return true;
+		if (eType.equals("EString")) return true;
+		if (eType.equals("EFloat")) return true;
+		if (eType.equals("EChar")) return true;
+		return false;
+	}
+	
+	public static EDataType getPrimitiveDataType(String eType) {
+		if (eType.equals("EInt")) return EcorePackageImpl.init().getEInt();
+		if (eType.equals("EBoolean")) return EcorePackageImpl.init().getEBoolean();
+		if (eType.equals("EString")) return EcorePackageImpl.init().getEString();
+		if (eType.equals("EFloat")) return EcorePackageImpl.init().getEFloat();
+		if (eType.equals("EChar")) return EcorePackageImpl.init().getEChar();
+		return null;
 	}
 	 
 }

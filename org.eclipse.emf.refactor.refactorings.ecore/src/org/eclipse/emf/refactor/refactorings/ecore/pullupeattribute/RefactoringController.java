@@ -215,7 +215,8 @@ public final class RefactoringController implements IController{
 				}
 				if (eSuperClass == null) {
 					result.addFatalError("EClass '" + containingEClass.getName() + 
-					"' does not have an eSuperType named '" + eClassName + "'!");
+							"' does not have an eSuperType named '" + eClassName + "'!");
+					return result;
 				}
 				// final check 2: each sub EClass of the super EClass must have 
 				// an EAttribute equivalent to the selected EAttribute (i.e. they

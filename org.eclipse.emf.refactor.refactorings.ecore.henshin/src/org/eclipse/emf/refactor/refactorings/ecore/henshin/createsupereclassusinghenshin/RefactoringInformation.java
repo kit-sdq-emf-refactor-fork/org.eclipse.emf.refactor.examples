@@ -8,11 +8,10 @@
 
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Platform;
-import org.eclipse.emf.refactor.henshin.runtime.HenshinInformationAdapter;
-import org.eclipse.emf.refactor.henshin.core.IHenshinDataManagement;
-import org.osgi.framework.Bundle;
-
+import org.eclipse.emf.refactor.refactoring.henshin.interfaces.IHenshinDataManagement;
+import org.eclipse.emf.refactor.refactoring.henshin.runtime.HenshinInformationAdapter;
 import org.eclipse.emf.refactor.refactorings.ecore.henshin.Activator;
+import org.osgi.framework.Bundle;
 
 /**
  * Class used for specifying a Henshin file that shall be used by
