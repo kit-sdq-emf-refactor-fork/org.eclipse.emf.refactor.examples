@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<diff:DiffModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diff="http://www.eclipse.org/emf/compare/diff/1.1">
+  <ownedElements xsi:type="diff:DiffGroup">
+    <subDiffElements xsi:type="diff:DiffGroup">
+      <subDiffElements xsi:type="diff:DiffGroup">
+        <subDiffElements xsi:type="diff:DiffGroup">
+          <subDiffElements xsi:type="diff:MoveModelElement">
+            <rightElement href="target.ecore#//Testclass1/theAttribute"/>
+            <leftElement href="source.ecore#//Testclass2/theAttribute.1"/>
+            <leftTarget href="source.ecore#//Testclass1"/>
+            <rightTarget href="target.ecore#//Testclass2"/>
+          </subDiffElements>
+          <rightParent href="target.ecore#//Testclass1/theAttribute"/>
+        </subDiffElements>
+        <rightParent href="target.ecore#//Testclass1"/>
+      </subDiffElements>
+      <rightParent href="target.ecore#/"/>
+    </subDiffElements>
+  </ownedElements>
+  <leftRoots href="source.ecore#/"/>
+  <rightRoots href="target.ecore#/"/>
+</diff:DiffModel>

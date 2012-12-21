@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<diff:DiffModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diff="http://www.eclipse.org/emf/compare/diff/1.1">
+  <ownedElements xsi:type="diff:DiffGroup">
+    <subDiffElements xsi:type="diff:DiffGroup">
+      <subDiffElements xsi:type="diff:DiffGroup">
+        <subDiffElements xsi:type="diff:ReferenceChangeLeftTarget" requires="//@ownedElements.0/@subDiffElements.0/@subDiffElements.1">
+          <reference href="http://www.eclipse.org/emf/2002/Ecore#//EClass/eSuperTypes"/>
+          <rightElement href="target.ecore#//Testclass2"/>
+          <leftElement href="source.ecore#//Testclass2"/>
+          <leftTarget href="source.ecore#//Testclass1"/>
+        </subDiffElements>
+        <rightParent href="target.ecore#//Testclass2"/>
+      </subDiffElements>
+      <subDiffElements xsi:type="diff:ModelElementChangeLeftTarget" requiredBy="//@ownedElements.0/@subDiffElements.0/@subDiffElements.0/@subDiffElements.0">
+        <rightParent href="target.ecore#/"/>
+        <leftElement href="source.ecore#//Testclass1"/>
+      </subDiffElements>
+      <rightParent href="target.ecore#/"/>
+    </subDiffElements>
+  </ownedElements>
+  <leftRoots href="source.ecore#/"/>
+  <rightRoots href="target.ecore#/"/>
+</diff:DiffModel>

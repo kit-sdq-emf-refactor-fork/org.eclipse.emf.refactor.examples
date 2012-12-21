@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- test final check 1, wrong name -->
+<config>
+
+	<param>
+		<name>eClassName</name>
+		<value>Name with spaces</value>
+	</param>	
+
+	
+</config>

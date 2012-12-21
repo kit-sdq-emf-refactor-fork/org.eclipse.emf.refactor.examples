@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<diff:DiffModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diff="http://www.eclipse.org/emf/compare/diff/1.1">
+  <ownedElements xsi:type="diff:DiffGroup">
+    <subDiffElements xsi:type="diff:DiffGroup">
+      <subDiffElements xsi:type="diff:DiffGroup">
+        <subDiffElements xsi:type="diff:ModelElementChangeLeftTarget">
+          <rightParent href="target.ecore#//TestEnum"/>
+          <leftElement href="source.ecore#//TestEnum/11"/>
+        </subDiffElements>
+        <subDiffElements xsi:type="diff:ModelElementChangeRightTarget">
+          <leftParent href="source.ecore#//TestEnum"/>
+          <rightElement href="target.ecore#//TestEnum/TESTLITERAL1"/>
+        </subDiffElements>
+        <rightParent href="target.ecore#//TestEnum"/>
+      </subDiffElements>
+      <rightParent href="target.ecore#/"/>
+    </subDiffElements>
+  </ownedElements>
+  <leftRoots href="source.ecore#/"/>
+  <rightRoots href="target.ecore#/"/>
+</diff:DiffModel>

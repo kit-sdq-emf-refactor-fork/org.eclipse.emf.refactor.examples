@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- final check 2, wrong name of reference-->
+<config>
+
+	<param>
+		<name>eClassName</name>
+		<value>Testclass2</value>
+	</param>	
+	<param>
+		<name>eReferenceName_1</name>
+		<value>StartsWithUppercase</value>
+	</param>	
+	<param>
+		<name>eReferenceName_2</name>
+		<value>tc2to1</value>
+	</param>
+
+	
+</config>

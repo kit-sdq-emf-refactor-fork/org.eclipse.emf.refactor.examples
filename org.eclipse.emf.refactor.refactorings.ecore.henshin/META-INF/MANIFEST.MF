@@ -7,7 +7,17 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.ltk.ui.refactoring,
  org.eclipse.emf.refactor.refactoring;bundle-version="0.7.0",
  org.eclipse.emf.refactor.refactoring.runtime;bundle-version="0.7.0",
- org.eclipse.emf.refactor.refactoring.henshin;bundle-version="0.7.0"
+ org.eclipse.emf.refactor.refactoring.henshin;bundle-version="0.7.0",
+ org.junit;bundle-version="4.10.0",
+ org.eclipse.emf.henshin.interpreter;bundle-version="0.9.4",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.8.0",
+ org.eclipse.emf.transaction;bundle-version="1.4.0",
+ org.eclipse.emf.compare.ui;bundle-version="1.3.2",
+ org.eclipse.core.expressions;bundle-version="3.4.401",
+ org.eclipse.emf.compare.match;bundle-version="1.3.2",
+ org.eclipse.compare;bundle-version="3.5.300",
+ com.google.guava;bundle-version="10.0.1",
+ org.eclipse.emf.compare.diff;bundle-version="1.3.2"
 Bundle-ActivationPolicy: lazy
 Bundle-Version: 0.7.0
 Bundle-Name: Henshin
@@ -17,4 +27,5 @@ Bundle-Activator: org.eclipse.emf.refactor.refactorings.ecore.henshin.
 Bundle-SymbolicName: org.eclipse.emf.refactor.refactorings.ecore.hensh
  in;singleton:=true
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.emf.compare.util
 

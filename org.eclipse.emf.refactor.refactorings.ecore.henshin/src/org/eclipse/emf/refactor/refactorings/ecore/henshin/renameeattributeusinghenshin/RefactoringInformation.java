@@ -6,6 +6,8 @@
  */
  package org.eclipse.emf.refactor.refactorings.ecore.henshin.renameeattributeusinghenshin;
 
+import java.io.File;
+
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Platform;
 import org.eclipse.emf.refactor.refactoring.henshin.interfaces.IHenshinDataManagement;
@@ -19,6 +21,8 @@ import org.osgi.framework.Bundle;
  * @generated
  */
 public class RefactoringInformation extends HenshinInformationAdapter {
+	
+	private final String transformationPathName = "transformation";
 	
 	/**
 	 * HenshinDataManagement object of the specific EMF model refactoring.
@@ -51,19 +55,24 @@ public class RefactoringInformation extends HenshinInformationAdapter {
 	/**
 	 * @see org.eclipse.emf.refactor.henshin.runtime.
 	 * HenshinInformationAdapter#getTransformationFileName()
-	 * @generated
+	 * @generated NOT
 	 */
 	@Override
 	public String getTransformationFileName() {
 		String emtPath = "";
 		final Bundle bundle = Platform.getBundle(Activator.PLUGIN_ID);
 		try {
-			emtPath = FileLocator.toFileURL
-						(bundle.getEntry("transformation")).getFile();
-			emtPath += this.transformationFileName;
+			if (bundle == null) { // does not run in an eclipse instance; used for JUnit tests
+				emtPath = transformationPathName + File.separator + this.transformationFileName;
+			} else {
+				emtPath = FileLocator.toFileURL
+							(bundle.getEntry(transformationPathName)).getFile();
+				emtPath += this.transformationFileName;
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
+
 		System.out.println(emtPath);
 		return emtPath;
 	}

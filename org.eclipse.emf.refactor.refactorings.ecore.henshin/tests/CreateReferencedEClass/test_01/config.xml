@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- final check 1, wrong name -->
+<config>
+
+	<param>
+		<name>eClassName</name>
+		<value>Name with spaces</value>
+	</param>	
+	<param>
+		<name>eReferenceName_1</name>
+		<value>tc1to2</value>
+	</param>	
+	<param>
+		<name>eReferenceName_2</name>
+		<value>tc2to1</value>
+	</param>
+
+	
+</config>
