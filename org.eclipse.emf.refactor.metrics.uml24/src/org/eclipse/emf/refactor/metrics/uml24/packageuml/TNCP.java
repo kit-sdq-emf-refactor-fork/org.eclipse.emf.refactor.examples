@@ -1,12 +1,11 @@
-package org.eclipse.emf.refactor.metrics.uml24.classuml;
+package org.eclipse.emf.refactor.metrics.uml24.packageuml;
 
 import java.util.List;
-
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.refactor.metrics.interfaces.IMetricCalculator;
 import org.eclipse.uml2.uml.PackageableElement;
 
-public final class NACP implements IMetricCalculator {
+public final class TNCP implements IMetricCalculator {
 		
 	private List<EObject> context; 
 		
@@ -22,9 +21,7 @@ public final class NACP implements IMetricCalculator {
 		// custom code - begin
 		for (PackageableElement pe : in.getPackagedElements()) {
 			if (pe instanceof org.eclipse.uml2.uml.Class) {
-				if (((org.eclipse.uml2.uml.Class) pe).isAbstract()) {
-					ret++;
-				}
+				ret++;
 			}
 		}
 		// custom code - end
