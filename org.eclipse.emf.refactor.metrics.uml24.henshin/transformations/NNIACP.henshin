@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin">
+  <imports href="http://www.eclipse.org/uml2/4.0.0/UML#/"/>
+  <units xsi:type="henshin:Rule" name="mainRule">
+    <parameters name="context"/>
+    <lhs name="Lhs">
+      <nodes incoming="//@units.0/@lhs/@edges.0">
+        <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+        <attributes value="true">
+          <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/isAbstract"/>
+        </attributes>
+      </nodes>
+      <nodes name="context" outgoing="//@units.0/@lhs/@edges.0">
+        <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+      </nodes>
+      <edges source="//@units.0/@lhs/@nodes.1" target="//@units.0/@lhs/@nodes.0">
+        <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Package/packagedElement"/>
+      </edges>
+      <formula xsi:type="henshin:Not">
+        <child xsi:type="henshin:NestedCondition">
+          <conclusion>
+            <nodes outgoing="//@units.0/@lhs/@formula/@child/@conclusion/@edges.0">
+              <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+              <attributes value="true">
+                <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/isAbstract"/>
+              </attributes>
+            </nodes>
+            <nodes incoming="//@units.0/@lhs/@formula/@child/@conclusion/@edges.0">
+              <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Generalization"/>
+            </nodes>
+            <edges source="//@units.0/@lhs/@formula/@child/@conclusion/@nodes.0" target="//@units.0/@lhs/@formula/@child/@conclusion/@nodes.1">
+              <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/generalization"/>
+            </edges>
+          </conclusion>
+          <mappings origin="//@units.0/@lhs/@nodes.0" image="//@units.0/@lhs/@formula/@child/@conclusion/@nodes.0"/>
+        </child>
+      </formula>
+    </lhs>
+    <rhs name="Rhs">
+      <nodes incoming="//@units.0/@rhs/@edges.0">
+        <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Class"/>
+        <attributes value="true">
+          <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Classifier/isAbstract"/>
+        </attributes>
+      </nodes>
+      <nodes name="context" outgoing="//@units.0/@rhs/@edges.0">
+        <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Package"/>
+      </nodes>
+      <edges source="//@units.0/@rhs/@nodes.1" target="//@units.0/@rhs/@nodes.0">
+        <type href="http://www.eclipse.org/uml2/4.0.0/UML#//Package/packagedElement"/>
+      </edges>
+    </rhs>
+    <mappings origin="//@units.0/@lhs/@nodes.0" image="//@units.0/@rhs/@nodes.0"/>
+    <mappings origin="//@units.0/@lhs/@nodes.1" image="//@units.0/@rhs/@nodes.1"/>
+  </units>
+</henshin:Module>
