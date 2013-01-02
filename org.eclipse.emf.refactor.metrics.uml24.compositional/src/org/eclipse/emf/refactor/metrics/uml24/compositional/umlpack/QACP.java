@@ -14,7 +14,7 @@ public class QACP implements IMetricCalculator {
 	private String metricID1 = "org.eclipse.emf.refactor.metrics.uml24.nacp";
 	private String metricID2 = "org.eclipse.emf.refactor.metrics.uml24.tncp";
 	
-	IOperation operation = Operations.getOperation("Div");
+	IOperation operation = Operations.getOperation("Division");
 
 	@Override
 	public void setContext(List<EObject> context) {

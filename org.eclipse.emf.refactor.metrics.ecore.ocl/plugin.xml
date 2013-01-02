@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="3.4"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
    <extension
          point="org.eclipse.emf.refactor.metrics">
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nceaec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NCEAEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NCEAEC"
             metric_context="EClass"
             metric_description="Number of constant EAttributes of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -13,7 +12,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nderoec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NDEROEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NDEROEC"
             metric_context="EClass"
             metric_description="Number of different EClasses being referenced by the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -21,7 +20,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.npecec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NPECEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NPECEC"
             metric_context="EClass"
             metric_description="Number of EClasses being parts of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -29,7 +28,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.neroec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NEROEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NEROEC"
             metric_context="EClass"
             metric_description="Number of EReferences of the given EClass to other EClasses."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -37,7 +36,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nersec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NERSEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NERSEC"
             metric_context="EClass"
             metric_description="Number of EReferences of the given EClass to itself."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -45,7 +44,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nerec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NEREC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NEREC"
             metric_context="EClass"
             metric_description="Total number of EReferences of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -53,7 +52,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.neaec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NEAEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NEAEC"
             metric_context="EClass"
             metric_description="Number of EAttributes of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -61,7 +60,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.neoec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NEOEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NEOEC"
             metric_context="EClass"
             metric_description="Number of EOperations of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -69,7 +68,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nsupec2"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NSUPEC2"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NSUPEC2"
             metric_context="EClass"
             metric_description="Total number of ancestors of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -77,7 +76,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nsupec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclass.NSUPEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.ocl.eclazz.NSUPEC"
             metric_context="EClass"
             metric_description="Number of direct parent EClasses of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"

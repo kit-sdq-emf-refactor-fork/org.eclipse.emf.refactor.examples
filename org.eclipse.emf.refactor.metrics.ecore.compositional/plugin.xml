@@ -5,7 +5,7 @@
          point="org.eclipse.emf.refactor.metrics">
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.avepeoec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.compositional.eclass.AvEPEOEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.compositional.eclazz.AvEPEOEC"
             metric_context="EClass"
             metric_description="Average number of EParameters in EOperations of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -13,7 +13,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nfeec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.compositional.eclass.NFEEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.compositional.eclazz.NFEEC"
             metric_context="EClass"
             metric_description="Number of features (EAttributes and EOperations) of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"

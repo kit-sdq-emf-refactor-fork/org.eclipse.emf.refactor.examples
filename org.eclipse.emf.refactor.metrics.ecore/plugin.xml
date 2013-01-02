@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 <extension point="org.eclipse.emf.refactor.metrics">
-<metric id="org.eclipse.emf.refactor.metrics.ecore.nepec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.NEPEC" metric_context="EClass" metric_description="Total number of EParameters in EOperations of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NEPEC"/>
+<metric id="org.eclipse.emf.refactor.metrics.ecore.nepec" metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclazz.NEPEC" metric_context="EClass" metric_description="Total number of EParameters in EOperations of the given EClass." metric_metamodel="http://www.eclipse.org/emf/2002/Ecore" metric_name="NEPEC"/>
 <metric
       id="org.eclipse.emf.refactor.metrics.ecore.haggec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.HAGGEC"
+      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclazz.HAGGEC"
       metric_context="EClass"
       metric_description="Length of the longest path to the leaves in the aggregation hierarchy."
       metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -12,7 +12,7 @@
 </metric>
 <metric
       id="org.eclipse.emf.refactor.metrics.ecore.maxditec"
-      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclass.MAXDITEC"
+      metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.eclazz.MAXDITEC"
       metric_context="EClass"
       metric_description="Depth of Inheritance Tree (maximum due to multiple inheritance)."
       metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"

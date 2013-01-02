@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 <extension point="org.eclipse.emf.refactor.metrics">
-<metric id="org.eclipse.emf.refactor.metrics.uml24.nacp" metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.packageuml.NACP" metric_context="Package" metric_description="Number of abstract Classes within the Package" metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" metric_name="NACP"/>
-<metric id="org.eclipse.emf.refactor.metrics.uml24.tncp" metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.packageuml.TNCP" metric_context="Package" metric_description="Total number of Classes within the Package" metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" metric_name="TNCP"/>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nacp" metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NACP" metric_context="Package" metric_description="Number of abstract Classes within the Package" metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" metric_name="NACP"/>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.tncp" metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.TNCP" metric_context="Package" metric_description="Total number of Classes within the Package" metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" metric_name="TNCP"/>
 </extension>
 </plugin>

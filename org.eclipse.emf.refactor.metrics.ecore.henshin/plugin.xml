@@ -5,7 +5,7 @@
          point="org.eclipse.emf.refactor.metrics">
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.eceoec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ECEOEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.ECEOEC"
             metric_context="EClass"
             metric_description="Number of EReferences of other EClasses having the given EClass as type."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -13,7 +13,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.ecerec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ECEREC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.ECEREC"
             metric_context="EClass"
             metric_description="Number of EReferences of other EClasses having the given EClass as type."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -21,7 +21,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.ecepec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ECEPEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.ECEPEC"
             metric_context="EClass"
             metric_description="Number of EParameters within other EClasses having the given EClass as type."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -29,7 +29,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.icepeiec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ICEPEIEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.ICEPEIEC"
             metric_context="EClass"
             metric_description="Number of EParameters within the EClass having another interface as type."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -37,7 +37,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.icepecec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ICEPECEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.ICEPECEC"
             metric_context="EClass"
             metric_description="Number of EParameters within the EClass having another EClass as type."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -45,7 +45,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.icepec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.ICEPEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.ICEPEC"
             metric_context="EClass"
             metric_description="Number of EParameters within the EClass having another EClass or interface as type."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -53,7 +53,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nsubec2"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.NSUBEC2"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.NSUBEC2"
             metric_context="EClass"
             metric_description="Number of all child EClasses of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
@@ -61,7 +61,7 @@
       </metric>
       <metric
             id="org.eclipse.emf.refactor.metrics.ecore.nsubec"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclass.NSUBEC"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.ecore.henshin.eclazz.NSUBEC"
             metric_context="EClass"
             metric_description="Number of direct child EClasses of the given EClass."
             metric_metamodel="http://www.eclipse.org/emf/2002/Ecore"
