@@ -1,4 +1,4 @@
-package org.eclipse.emf.refactor.smells.metricbased;
+package org.eclipse.emf.refactor.smells.ecore.metricbased;
 
 import java.util.LinkedList;
 import java.util.List;

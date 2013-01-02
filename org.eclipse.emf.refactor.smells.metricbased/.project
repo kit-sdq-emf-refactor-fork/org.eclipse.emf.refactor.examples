@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.eclipse.emf.refactor.smells.metricbased</name>
+	<name>org.eclipse.emf.refactor.smells.ecore.metricbased</name>
 	<comment></comment>
 	<projects>
 	</projects>

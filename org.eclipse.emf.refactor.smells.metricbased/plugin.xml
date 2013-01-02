@@ -6,7 +6,7 @@
       <modelsmell
             id="org.eclipse.emf.refactor.smells.ecore.largeeclass"
             modelsmell_description="The model contains an EClass owning more features (EAttributes and EOperations) than the specified limit."
-            modelsmell_finderclass="org.eclipse.emf.refactor.smells.metricbased.LargeEClass"
+            modelsmell_finderclass="org.eclipse.emf.refactor.smells.ecore.metricbased.LargeEClass"
             modelsmell_metamodel="http://www.eclipse.org/emf/2002/Ecore"
             modelsmell_name="Large EClass">
       </modelsmell>
