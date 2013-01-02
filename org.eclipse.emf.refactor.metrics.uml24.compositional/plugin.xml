@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.refactor.metrics">
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.qacp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.compositional.umlpack.QACP"
+            metric_context="Package"
+            metric_description="Quota of abstract Classes within the Package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="QACP">
+      </metric>
+   </extension>
+
+</plugin>
