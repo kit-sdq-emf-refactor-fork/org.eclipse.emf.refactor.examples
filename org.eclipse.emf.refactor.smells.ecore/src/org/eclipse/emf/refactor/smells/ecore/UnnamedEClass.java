@@ -14,7 +14,7 @@ public final class UnnamedEClass implements IModelSmellFinder {
 	@Override
 	public LinkedList<LinkedList<EObject>> findSmell(EObject root) {
 		LinkedList<LinkedList<EObject>> results = new LinkedList<LinkedList<EObject>>();
-		List<EClass> classes = getAllClasss(root);
+		List<EClass> classes = getAllClasses(root);
 		for (EClass cl : classes) {
 			if (cl.getName() == null || cl.getName().equals("")) {
 				LinkedList<EObject> result = new LinkedList<EObject>();
@@ -25,7 +25,7 @@ public final class UnnamedEClass implements IModelSmellFinder {
 		return results;
 	}
 	
-	private List<EClass> getAllClasss(EObject root) {
+	private List<EClass> getAllClasses(EObject root) {
 		List<EClass> classes = new ArrayList<EClass>();
 		TreeIterator<EObject> iter = root.eAllContents();
 		while (iter.hasNext()) {
