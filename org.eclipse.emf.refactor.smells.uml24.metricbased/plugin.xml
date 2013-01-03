@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.emf.refactor.smells">
+      <modelsmell
+            id="org.eclipse.emf.refactor.smells.uml24.abstractpackage"
+            modelsmell_description="The model contains a Package with a qouta of abstract Classes higher than the specified limit."
+            modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.metricbased.AbstractPackage"
+            modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            modelsmell_name="Abstract Package">
+      </modelsmell>
+   </extension>
+
+</plugin>
