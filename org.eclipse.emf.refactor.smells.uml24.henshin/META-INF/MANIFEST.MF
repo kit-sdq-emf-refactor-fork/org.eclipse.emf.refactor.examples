@@ -1,10 +1,13 @@
 Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: SmellsUML24Henshin
-Bundle-SymbolicName: org.eclipse.emf.refactor.smells.uml24.henshin
-Bundle-Version: 0.7.0
-Bundle-Activator: org.eclipse.emf.refactor.smells.uml24.henshin.Activator
-Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.ecore,org.eclipse.emf.refactor.smells,org.eclipse.emf.refactor.smel
+ ls.henshin
 Bundle-ActivationPolicy: lazy
+Bundle-Version: 0.7.0
+Bundle-Name: SmellsUML24Henshin
+Bundle-Activator: org.eclipse.emf.refactor.smells.uml24.henshin.Activa
+ tor
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.emf.refactor.smells.uml24.henshin;singleton:=true
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+
