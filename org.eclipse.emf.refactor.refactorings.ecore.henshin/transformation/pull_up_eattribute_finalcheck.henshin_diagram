@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_CZZcMO9hEeCQ_MU5SUDLqQ" type="Henshin" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_CZZcMO9hEeCQ_MU5SUDLqQ" type="Henshin" measurementUnit="Pixel">
   <children xmi:type="notation:Shape" xmi:id="_CalvAO9hEeCQ_MU5SUDLqQ" type="2001" fontName="Segoe UI" italic="true" fillColor="16114135" lineColor="0">
     <children xmi:type="notation:DecorationNode" xmi:id="_CalvAu9hEeCQ_MU5SUDLqQ" type="5001"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_CalvA-9hEeCQ_MU5SUDLqQ" type="7001">
@@ -102,16 +102,54 @@
       </children>
     </children>
     <element xmi:type="henshin:Rule" href="pull_up_eattribute_finalcheck.henshin#_yeIjTRHwEeKSGqZuqrXSrQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CalvBe9hEeCQ_MU5SUDLqQ" x="334" y="28" width="542" height="505"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CalvBe9hEeCQ_MU5SUDLqQ" x="429" y="41" width="542" height="505"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_CalvCO9hEeCQ_MU5SUDLqQ" type="2002" fontName="Segoe UI" italic="true" fillColor="14808535" lineColor="0">
     <children xmi:type="notation:DecorationNode" xmi:id="_CalvCu9hEeCQ_MU5SUDLqQ" type="5004"/>
-    <children xmi:type="notation:DecorationNode" xmi:id="_CalvC-9hEeCQ_MU5SUDLqQ" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_CalvC-9hEeCQ_MU5SUDLqQ" type="7003">
+      <children xmi:type="notation:Shape" xmi:id="_AvKxAISREeKKvafrQMgTfg" type="3003" fontName="Segoe UI" italic="true" lineColor="0">
+        <children xmi:type="notation:DecorationNode" xmi:id="_AvKxAoSREeKKvafrQMgTfg" type="5005"/>
+        <element xmi:type="henshin:Rule" href="pull_up_eattribute_finalcheck.henshin#_yeIjQBHwEeKSGqZuqrXSrQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AvKxAYSREeKKvafrQMgTfg" x="228" y="113"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AvKxA4SREeKKvafrQMgTfg" type="3004">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AvKxB4SREeKKvafrQMgTfg" source="symbol">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvKxCISREeKKvafrQMgTfg" key="type" value="UNIT_BEGIN"/>
+        </eAnnotations>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_AvKxBISREeKKvafrQMgTfg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_AvKxBYSREeKKvafrQMgTfg" fontName="Segoe UI"/>
+        <element xmi:type="henshin:IndependentUnit" href="pull_up_eattribute_finalcheck.henshin#_yeJxYBHwEeKSGqZuqrXSrQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AvKxCYSREeKKvafrQMgTfg" x="37" y="76"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AvKxCoSREeKKvafrQMgTfg" type="3004">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AvKxDoSREeKKvafrQMgTfg" source="symbol">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvKxD4SREeKKvafrQMgTfg" key="type" value="UNIT_END"/>
+        </eAnnotations>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_AvKxC4SREeKKvafrQMgTfg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_AvKxDISREeKKvafrQMgTfg" fontName="Segoe UI"/>
+        <element xmi:type="henshin:IndependentUnit" href="pull_up_eattribute_finalcheck.henshin#_yeJxYBHwEeKSGqZuqrXSrQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AvKxEISREeKKvafrQMgTfg" x="749" y="86"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_AvKxEYSREeKKvafrQMgTfg" type="3004">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AvKxFYSREeKKvafrQMgTfg" source="symbol">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AvKxFoSREeKKvafrQMgTfg" key="type" value="INDEPENDENT_CHOICE"/>
+        </eAnnotations>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_AvKxEoSREeKKvafrQMgTfg"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_AvKxE4SREeKKvafrQMgTfg" fontName="Segoe UI"/>
+        <element xmi:type="henshin:IndependentUnit" href="pull_up_eattribute_finalcheck.henshin#_yeJxYBHwEeKSGqZuqrXSrQ"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_AvKxF4SREeKKvafrQMgTfg" x="129" y="76"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_AvKxJISREeKKvafrQMgTfg" type="3003" fontName="Segoe UI" italic="true" lineColor="0">
+        <children xmi:type="notation:DecorationNode" xmi:id="_AvKxJoSREeKKvafrQMgTfg" type="5005"/>
+        <element xmi:type="henshin:Rule" href="pull_up_eattribute_finalcheck.henshin#_yeIjTRHwEeKSGqZuqrXSrQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AvKxJYSREeKKvafrQMgTfg" x="219" y="45"/>
+      </children>
+    </children>
     <element xmi:type="henshin:IndependentUnit" href="pull_up_eattribute_finalcheck.henshin#_yeJxYBHwEeKSGqZuqrXSrQ"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CalvCe9hEeCQ_MU5SUDLqQ" x="1752"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CalvCe9hEeCQ_MU5SUDLqQ" x="16" y="560" width="955"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_CZZcMe9hEeCQ_MU5SUDLqQ"/>
-  <element xmi:type="henshin:TransformationSystem" href="pull_up_eattribute_finalcheck.henshin#_ydJr0BHwEeKSGqZuqrXSrQ"/>
+  <element xmi:type="henshin:Module" href="pull_up_eattribute_finalcheck.henshin#_ydJr0BHwEeKSGqZuqrXSrQ"/>
   <edges xmi:type="notation:Connector" xmi:id="_Cbef0O9hEeCQ_MU5SUDLqQ" type="4001" source="_CalvE-9hEeCQ_MU5SUDLqQ" target="_CalvDO9hEeCQ_MU5SUDLqQ">
     <children xmi:type="notation:DecorationNode" xmi:id="_Cbef0-9hEeCQ_MU5SUDLqQ" type="6001">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_Cbef1O9hEeCQ_MU5SUDLqQ" x="-13" y="-77"/>

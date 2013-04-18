@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="ASCII"?>
-<henshin:TransformationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_ydJr0BHwEeKSGqZuqrXSrQ" name="transformation system">
-  <rules xmi:id="_yeIjQBHwEeKSGqZuqrXSrQ" description="The containing EClass does not have an eSuperType with the specified name!" name="check_input">
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_ydJr0BHwEeKSGqZuqrXSrQ" name="transformation system">
+  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_yeIjQBHwEeKSGqZuqrXSrQ" name="check_input" description="The containing EClass does not have an eSuperType with the specified name!">
     <parameters xmi:id="_yeIjQRHwEeKSGqZuqrXSrQ" name="selectedEAttribute"/>
     <parameters xmi:id="_yeIjQhHwEeKSGqZuqrXSrQ" name="superEClass"/>
     <lhs xmi:id="_yeIjQxHwEeKSGqZuqrXSrQ" name="LHS">
@@ -46,8 +47,8 @@
     </rhs>
     <mappings xmi:id="_yeIjSxHwEeKSGqZuqrXSrQ" origin="_yeIjRBHwEeKSGqZuqrXSrQ" image="_yeIjSBHwEeKSGqZuqrXSrQ"/>
     <mappings xmi:id="_yeIjTBHwEeKSGqZuqrXSrQ" origin="_yeIjRRHwEeKSGqZuqrXSrQ" image="_yeIjSRHwEeKSGqZuqrXSrQ"/>
-  </rules>
-  <rules xmi:id="_yeIjTRHwEeKSGqZuqrXSrQ" description="There is a sibling EClass that does not have an equivalent EAttribute!" name="check_equivalents">
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_yeIjTRHwEeKSGqZuqrXSrQ" name="check_equivalents" description="There is a sibling EClass that does not have an equivalent EAttribute!">
     <parameters xmi:id="_yeIjThHwEeKSGqZuqrXSrQ" name="selectedEAttribute"/>
     <parameters xmi:id="_yeIjTxHwEeKSGqZuqrXSrQ" name="eAttributeName"/>
     <parameters xmi:id="_yeIjUBHwEeKSGqZuqrXSrQ" name="eAttributeId"/>
@@ -162,14 +163,13 @@
     <mappings xmi:id="_yeIjchHwEeKSGqZuqrXSrQ" origin="_yeIjVhHwEeKSGqZuqrXSrQ" image="_yeIjahHwEeKSGqZuqrXSrQ"/>
     <mappings xmi:id="_yeIjcxHwEeKSGqZuqrXSrQ" origin="_yeIjWBHwEeKSGqZuqrXSrQ" image="_yeIjbRHwEeKSGqZuqrXSrQ"/>
     <mappings xmi:id="_yeIjdBHwEeKSGqZuqrXSrQ" origin="_yeIjWRHwEeKSGqZuqrXSrQ" image="_yeIjbBHwEeKSGqZuqrXSrQ"/>
-  </rules>
-  <imports href="http://www.eclipse.org/emf/2002/Ecore#/"/>
-  <transformationUnits xsi:type="henshin:IndependentUnit" xmi:id="_yeJxYBHwEeKSGqZuqrXSrQ" description="" name="mainUnit" subUnits="_yeIjQBHwEeKSGqZuqrXSrQ _yeIjTRHwEeKSGqZuqrXSrQ">
+  </units>
+  <units xsi:type="henshin:IndependentUnit" xmi:id="_yeJxYBHwEeKSGqZuqrXSrQ" name="mainUnit" description="" subUnits="_yeIjQBHwEeKSGqZuqrXSrQ _yeIjTRHwEeKSGqZuqrXSrQ">
     <parameters xmi:id="_yeJxYRHwEeKSGqZuqrXSrQ" name="selectedEObject"/>
     <parameters xmi:id="_yeJxYhHwEeKSGqZuqrXSrQ" name="eClassName"/>
     <parameterMappings xmi:id="_yelPMBHwEeKSGqZuqrXSrQ" source="_yeJxYRHwEeKSGqZuqrXSrQ" target="_yeIjQRHwEeKSGqZuqrXSrQ"/>
     <parameterMappings xmi:id="_yelPMRHwEeKSGqZuqrXSrQ" source="_yeJxYhHwEeKSGqZuqrXSrQ" target="_yeIjQhHwEeKSGqZuqrXSrQ"/>
     <parameterMappings xmi:id="_yelPMhHwEeKSGqZuqrXSrQ" source="_yeJxYRHwEeKSGqZuqrXSrQ" target="_yeIjThHwEeKSGqZuqrXSrQ"/>
     <parameterMappings xmi:id="_yelPMxHwEeKSGqZuqrXSrQ" source="_yeJxYhHwEeKSGqZuqrXSrQ" target="_yeIjURHwEeKSGqZuqrXSrQ"/>
-  </transformationUnits>
-</henshin:TransformationSystem>
+  </units>
+</henshin:Module>
