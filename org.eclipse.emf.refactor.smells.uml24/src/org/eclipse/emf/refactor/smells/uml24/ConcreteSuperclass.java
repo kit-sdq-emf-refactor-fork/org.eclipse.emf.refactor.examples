@@ -8,6 +8,8 @@ import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.refactor.smells.interfaces.IModelSmellFinder;
 import org.eclipse.uml2.uml.Class;
+import org.eclipse.uml2.uml.Classifier;
+import org.eclipse.uml2.uml.Generalization;
 
 
 public final class ConcreteSuperclass implements IModelSmellFinder {
@@ -19,13 +21,16 @@ public final class ConcreteSuperclass implements IModelSmellFinder {
 		List<Class> classes = getAllClasses(root);
 		for (Class cl : classes) {
 			if (cl.isAbstract()) {
-				List<Class> superclasses = cl.getSuperClasses();
-				for (Class superclass : superclasses) {
-					if (! superclass.isAbstract()) {
-						LinkedList<EObject> result = new LinkedList<EObject>();
-						result.add(cl);
-						result.add(superclass);
-						results.add(result);
+				for (Generalization gen : cl.getGeneralizations()) {
+					if (gen.getGeneral() instanceof Class) {
+						Class superclass = (Class) gen.getGeneral();
+						if (! superclass.isAbstract()) {
+							LinkedList<EObject> result = new LinkedList<EObject>();
+							result.add(cl);
+							result.add(gen);
+							result.add(superclass);
+							results.add(result);
+						}
 					}
 				}
 			}
