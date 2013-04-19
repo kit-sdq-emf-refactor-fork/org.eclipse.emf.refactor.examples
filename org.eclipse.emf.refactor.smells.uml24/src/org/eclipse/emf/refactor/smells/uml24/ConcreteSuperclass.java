@@ -8,7 +8,6 @@ import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.refactor.smells.interfaces.IModelSmellFinder;
 import org.eclipse.uml2.uml.Class;
-import org.eclipse.uml2.uml.Classifier;
 import org.eclipse.uml2.uml.Generalization;
 
 
@@ -27,8 +26,8 @@ public final class ConcreteSuperclass implements IModelSmellFinder {
 						if (! superclass.isAbstract()) {
 							LinkedList<EObject> result = new LinkedList<EObject>();
 							result.add(cl);
-							result.add(gen);
 							result.add(superclass);
+							result.add(gen);
 							results.add(result);
 						}
 					}
