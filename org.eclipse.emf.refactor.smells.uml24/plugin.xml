@@ -1,6 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 <extension point="org.eclipse.emf.refactor.smells">
-<modelsmell id="org.eclipse.emf.refactor.smells.uml24.concretesuperclass" modelsmell_description="There is an abstract Class having a concrete super Class" modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.ConcreteSuperclass" modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" modelsmell_name="Concrete Superclass"/>
+<modelsmell 
+      id="org.eclipse.emf.refactor.smells.uml24.concretesuperclass" 
+      modelsmell_description="There is an abstract Class having a concrete super Class" 
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.ConcreteSuperclass" 
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+      modelsmell_name="Concrete Superclass">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.equalattributesinsiblingclasses"
+      modelsmell_description="Each sibling class of the owning class of the attribute contains an equal attribute."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.EqualAttributesinSiblingClasses"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Equal Attributes in Sibling Classes">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.unnamedclass"
+      modelsmell_description="The model contains a class without a name."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.UnnamedClass"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Unnamed Class">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.unnamedattribute"
+      modelsmell_description="The model contains an attribute without a name."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.UnnamedAttribute"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Unnamed Attribute">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.unnamedoperation"
+      modelsmell_description="The model contains an operation without a name."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.UnnamedOperation"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Unnamed Operation">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.unnamedinterface"
+      modelsmell_description="The model contains an interface without a name."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.UnnamedInterface"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Unnamed Interface">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.unnamedparameter"
+      modelsmell_description="The model contains a non-return parameter without a name."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.UnnamedParameter"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Unnamed Parameter">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.unnamedpackage"
+      modelsmell_description="The model contains a package without a name."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.UnnamedPackage"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Unnamed Package">
+</modelsmell>
+<modelsmell
+      id="org.eclipse.emf.refactor.smells.uml24.unnameddatatype"
+      modelsmell_description="The model contains a data type without a name."
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.UnnamedDataType"
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+      modelsmell_name="Unnamed Data Type">
+</modelsmell>
 </extension>
 </plugin>
