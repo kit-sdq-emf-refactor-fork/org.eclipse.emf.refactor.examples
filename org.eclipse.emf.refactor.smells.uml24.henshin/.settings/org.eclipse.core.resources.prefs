@@ -1,3 +1,8 @@
 eclipse.preferences.version=1
+encoding//transformations/attributenameoverridden.henshin_diagram=UTF-8
+encoding//transformations/equallynamedclasses.henshin_diagram=UTF-8
 encoding//transformations/nospecification.henshin=UTF-8
 encoding//transformations/nospecification.henshin_diagram=UTF-8
+encoding//transformations/specializationaggregation.henshin_diagram=UTF-8
+encoding//transformations/speculativegeneralityclass.henshin_diagram=UTF-8
+encoding//transformations/speculativegeneralityinterface.henshin_diagram=UTF-8

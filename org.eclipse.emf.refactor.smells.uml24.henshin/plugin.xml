@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 <extension point="org.eclipse.emf.refactor.smells">
-<modelsmell id="org.eclipse.emf.refactor.smells.uml24.nospecification" modelsmell_description="The model contains an abstract Class without any concrete subclasses." modelsmell_finderclass="org.eclipse.emf.refactor.modelsmell.NoSpecification" modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" modelsmell_name="No Specification"/>
+<modelsmell 
+	id="org.eclipse.emf.refactor.smells.uml24.nospecification" 
+	modelsmell_description="The model contains an abstract Class without any concrete subclasses." 
+	modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.NoSpecification" 
+	modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	modelsmell_name="No Specification">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.attributenameoverridden"
+    modelsmell_description="The model contains an attribute with the same name as an inherited and redefined attribute."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.AttributeNameOverridden"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Attribute Name Overridden">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"
+    modelsmell_description="The model contains two classes (in different packages) having the same name."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.EquallyNamedClasses"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Equally Named Classes">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.specializationaggregation"
+    modelsmell_description="The model contains a generalization hierarchy between associations."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.SpecializationAggregation"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Specialization Aggregation">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.speculativegeneralityclass"
+    modelsmell_description="The model contains an abstract class that is inherited by one single class only."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.SpeculativeGeneralityClass"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Speculative Generality Class">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.speculativegeneralityinterface"
+    modelsmell_description="The model contains an interface that is implemented by one single class only."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.SpeculativeGeneralityInterface"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Speculative Generality Interface">
+</modelsmell>
 </extension>
 </plugin>

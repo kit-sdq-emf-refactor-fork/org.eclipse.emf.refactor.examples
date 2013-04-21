@@ -1,4 +1,4 @@
-package org.eclipse.emf.refactor.modelsmell;
+package org.eclipse.emf.refactor.smells.uml24.henshin;
 
 import java.io.IOException;
 import java.net.URL;
@@ -11,10 +11,10 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.refactor.smells.henshin.managers.HenshinRuntimeManager;
 import org.eclipse.emf.refactor.smells.interfaces.IModelSmellFinder;
 
-public final class NoSpecification implements IModelSmellFinder {
+public final class EquallyNamedClasses implements IModelSmellFinder {
 
 	private final String transformationPath = "transformations/";
-	private final String henshinFileName = "nospecification.henshin";
+	private final String henshinFileName = "equallynamedclasses.henshin";
 
 	@Override
 	public LinkedList<LinkedList<EObject>> findSmell(EObject root) {
