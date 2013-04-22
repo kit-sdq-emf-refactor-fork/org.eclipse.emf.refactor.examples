@@ -17,4 +17,22 @@
 	metric_name="TNCP">
 </metric>
 </extension>
+<extension point="org.eclipse.emf.refactor.metrics">
+<metric id="org.eclipse.emf.refactor.metrics.uml24.neatc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NEATC" 
+	metric_context="Class" 
+	metric_description="Number of equal attributes with other classes" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NEATC">
+</metric>
+</extension>
+<extension point="org.eclipse.emf.refactor.metrics">
+<metric id="org.eclipse.emf.refactor.metrics.uml24.neipo" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlop.NEIPO" 
+	metric_context="Operation" 
+	metric_description="Number of equal input-parameters in sibling operations" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NEIPO">
+</metric>
+</extension>
 </plugin>
