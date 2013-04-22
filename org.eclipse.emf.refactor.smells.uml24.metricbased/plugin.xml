@@ -38,6 +38,20 @@
             modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
             modelsmell_name="Long Parameter List">
       </modelsmell>
+      <modelsmell
+            id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"
+            modelsmell_description="The model contains a class with more constant attributes than the specified limit."
+            modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.metricbased.PrimitiveObsessionConstants"
+            modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            modelsmell_name="Primitive Obsession (Constants)">
+      </modelsmell>
+      <modelsmell
+            id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"
+            modelsmell_description="The model contains a class with more attributes being of primitive type than the specified limit."
+            modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.metricbased.PrimitiveObsessionPrimitiveType"
+            modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            modelsmell_name="Primitive Obsession (Primitive Type)">
+      </modelsmell>
    </extension>
 
 </plugin>
