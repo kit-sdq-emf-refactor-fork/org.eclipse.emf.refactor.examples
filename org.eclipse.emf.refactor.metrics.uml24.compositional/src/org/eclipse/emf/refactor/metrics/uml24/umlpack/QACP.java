@@ -1,4 +1,4 @@
-package org.eclipse.emf.refactor.metrics.uml24.compositional.umlpack;
+package org.eclipse.emf.refactor.metrics.uml24.umlpack;
 
 import java.util.List;
 
