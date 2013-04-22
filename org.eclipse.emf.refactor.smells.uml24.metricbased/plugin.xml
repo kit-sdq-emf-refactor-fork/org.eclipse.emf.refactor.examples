@@ -10,6 +10,20 @@
             modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
             modelsmell_name="Abstract Package">
       </modelsmell>
+      <modelsmell
+            id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"
+            modelsmell_description="The model contains classes with a specific number of equal attributes."
+            modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.metricbased.DataClumpsAttributes"
+            modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            modelsmell_name="Data Clumps (Attributes)">
+      </modelsmell>
+      <modelsmell
+            id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters"
+            modelsmell_description="The model contains operations with a specific number of equal input parameters."
+            modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.metricbased.DataClumpsParameters"
+            modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            modelsmell_name="Data Clumps (Parameters)">
+      </modelsmell>
    </extension>
 
 </plugin>
