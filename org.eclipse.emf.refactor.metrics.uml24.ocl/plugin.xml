@@ -13,14 +13,14 @@
 <metric id="org.eclipse.emf.refactor.metrics.uml24.natc" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NATC" 
 	metric_context="Class" 
-	metric_description="Number of attributes within the class" 
+	metric_description="Number of owned attributes within the class" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NATC">
 </metric>
 <metric id="org.eclipse.emf.refactor.metrics.uml24.nopc" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NOPC" 
 	metric_context="Class" 
-	metric_description="Number of operations within the class" 
+	metric_description="Number of owned operations within the class" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NOPC">
 </metric>
