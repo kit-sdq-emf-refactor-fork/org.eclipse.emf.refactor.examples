@@ -31,6 +31,13 @@
             modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
             modelsmell_name="Large Class">
       </modelsmell>
+      <modelsmell
+            id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"
+            modelsmell_description="The model contains an operation with more input parameters than the specified limit."
+            modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.metricbased.LongParameterList"
+            modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            modelsmell_name="Long Parameter List">
+      </modelsmell>
    </extension>
 
 </plugin>
