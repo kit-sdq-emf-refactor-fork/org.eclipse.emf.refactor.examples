@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 <extension point="org.eclipse.emf.refactor.metrics">
-<metric id="org.eclipse.emf.refactor.metrics.uml24.nccp" metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NCCP" metric_context="Package" metric_description="Number of concrete Classes within the Package" metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" metric_name="NCCP"/>
+	<metric id="org.eclipse.emf.refactor.metrics.uml24.nccp" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NCCP" 
+	metric_context="Package" 
+	metric_description="Number of concrete Classes within the Package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NCCP">
+</metric>
+</extension>
+<extension point="org.eclipse.emf.refactor.metrics">
+<metric id="org.eclipse.emf.refactor.metrics.uml24.natc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NATC" 
+	metric_context="Class" 
+	metric_description="Number of attributes within the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NATC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nopc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NOPC" 
+	metric_context="Class" 
+	metric_description="Number of operations within the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NOPC">
+</metric>
 </extension>
 </plugin>
