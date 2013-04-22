@@ -43,5 +43,33 @@
     modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
     modelsmell_name="Speculative Generality Interface">
 </modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.emptypackage"
+    modelsmell_description="The model contains a package without any contained elements."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.EmptyPackage"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Empty Package">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.unusedclass"
+    modelsmell_description="The model contains a class that has no child or parent classes, that is not associated to any interface, and that is not used as attribute or parameter type."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.UnusedClass"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Unused Class">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.unusedenumeration"
+    modelsmell_description="The model contains an enumeration whose literals are not used as any attribute types."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.UnusedEnumeration"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Unused Enumeration">
+</modelsmell>
+<modelsmell
+    id="org.eclipse.emf.refactor.smells.uml24.henshin.unusedinterface"
+    modelsmell_description="The model contains an interface that is not specialized by another interface, and not realized or used by any classes."
+    modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.henshin.UnusedInterface"
+    modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+    modelsmell_name="Unused Interface">
+</modelsmell>
 </extension>
 </plugin>
