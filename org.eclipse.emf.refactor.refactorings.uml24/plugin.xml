@@ -19,5 +19,11 @@
       id="org.eclipse.emf.refactor.refactorings.uml24.pullupoperation" 
       menulabel="Pull Up Operation" 
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute" 
+      menulabel="Push Down Attribute" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 </extension>
 </plugin>
