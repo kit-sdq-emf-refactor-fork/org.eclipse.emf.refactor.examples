@@ -8,18 +8,6 @@
       menulabel="Add Parameter"
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 <refactoring 
-      controller="org.eclipse.emf.refactor.refactorings.uml24.renameclass.RefactoringController" 
-      gui="org.eclipse.emf.refactor.refactorings.uml24.renameclass.RefactoringGuiHandler" 
-      id="org.eclipse.emf.refactor.refactorings.uml24.renameclass" 
-      menulabel="Rename Class" 
-      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
-<refactoring 
-      controller="org.eclipse.emf.refactor.refactorings.uml24.renameoperation.RefactoringController" 
-      gui="org.eclipse.emf.refactor.refactorings.uml24.renameoperation.RefactoringGuiHandler" 
-      id="org.eclipse.emf.refactor.refactorings.uml24.renameoperation" 
-      menulabel="Rename Operation" 
-      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
-<refactoring 
       controller="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringController" 
       gui="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringGuiHandler" 
       id="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute" 
@@ -36,6 +24,24 @@
       gui="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute.RefactoringGuiHandler" 
       id="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute" 
       menulabel="Push Down Attribute" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.pushdownoperation.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.pushdownoperation.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.pushdownoperation" 
+      menulabel="Push Down Operation" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.renameclass.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.renameclass.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.renameclass" 
+      menulabel="Rename Class" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.renameoperation.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.renameoperation.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.renameoperation" 
+      menulabel="Rename Operation" 
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 </extension>
 </plugin>
