@@ -14,6 +14,12 @@
       menulabel="Rename Class" 
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 <refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.renameoperation.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.renameoperation.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.renameoperation" 
+      menulabel="Rename Operation" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring 
       controller="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringController" 
       gui="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringGuiHandler" 
       id="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute" 
