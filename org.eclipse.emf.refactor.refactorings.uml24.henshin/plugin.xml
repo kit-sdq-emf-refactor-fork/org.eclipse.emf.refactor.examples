@@ -8,6 +8,12 @@
       menulabel="Hide Attribute"
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 <refactoring 
+	  controller="org.eclipse.emf.refactor.refactorings.uml24.removeunusedinterface.RefactoringController" 
+	  gui="org.eclipse.emf.refactor.refactorings.uml24.removeunusedinterface.RefactoringGuiHandler" 
+	  id="org.eclipse.emf.refactor.refactorings.uml24.removeunusedinterface" 
+	  menulabel="Remove Unused Interface" 
+	  namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring 
 	  controller="org.eclipse.emf.refactor.refactorings.uml24.renameattribute.RefactoringController" 
 	  gui="org.eclipse.emf.refactor.refactorings.uml24.renameattribute.RefactoringGuiHandler" 
 	  id="org.eclipse.emf.refactor.refactorings.uml24.renameattribute" 
