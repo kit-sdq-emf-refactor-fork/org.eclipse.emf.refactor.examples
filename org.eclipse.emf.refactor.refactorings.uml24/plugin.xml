@@ -38,6 +38,12 @@
       menulabel="Push Down Operation" 
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 <refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.removeemptysubclass.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.removeemptysubclass.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysubclass" 
+      menulabel="Remove Empty Subclass" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring 
       controller="org.eclipse.emf.refactor.refactorings.uml24.renameclass.RefactoringController" 
       gui="org.eclipse.emf.refactor.refactorings.uml24.renameclass.RefactoringGuiHandler" 
       id="org.eclipse.emf.refactor.refactorings.uml24.renameclass" 
