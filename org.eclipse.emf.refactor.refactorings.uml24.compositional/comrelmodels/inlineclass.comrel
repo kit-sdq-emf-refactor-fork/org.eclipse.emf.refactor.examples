@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comrel:CompositeRefactoring xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comrel="http://comrel/0.1" name="inlineclass" refId="comrel.inlineclass" label="Inline Class" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+  <mainRefactoringUnit xsi:type="comrel:SequentialUnit" name="inlineclass">
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="GetOwnedAttributesNoAssocEnds" helperUnitId="comrel.getownedattributesnoassocends" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.0">
+      <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="property_s" type="org.eclipse.uml2.uml.Property"/>
+    </helperUnits>
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="GetOwnedOperations" helperUnitId="comrel.getownedoperations" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.1">
+      <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="operation_s" type="org.eclipse.uml2.uml.Operation"/>
+    </helperUnits>
+    <helperUnits xsi:type="comrel:SingleFeatureUnit" name="Get Associated Class" helperUnitId="comrel.getassociatedclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" singleFeatureHelper="//@helper.2">
+      <inputPort name="class_in" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="class_out" type="org.eclipse.uml2.uml.Class"/>
+    </helperUnits>
+    <helperUnits xsi:type="comrel:SingleFeatureUnit" name="Get Class  Name" helperUnitId="comrel.getclassname" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" singleFeatureHelper="//@helper.3">
+      <inputPort name="class_in" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="string_out" type="java.lang.String"/>
+    </helperUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="1">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Move Attribute" unitId="org.eclipse.emf.refactor.refactorings.uml24.moveattribute" label="Move Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.0">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+        <inputPorts name="className" description="" type="java.lang.String"/>
+      </refactoringUnit>
+      <singleInputPorts name="className" type="java.lang.String"/>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Property"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="2">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Move Operation" unitId="org.eclipse.emf.refactor.refactorings.uml24.moveoperation" label="Move Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.1">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+        <inputPorts name="className" description="" type="java.lang.String"/>
+      </refactoringUnit>
+      <singleInputPorts name="className" type="java.lang.String"/>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Operation"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:AtomicUnit" name="Remove Empty Associated Class" seqExecutionOrder="3" unitId="org.eclipse.emf.refactor.refactorings.uml24.removeemptyassociatedclass" label="Remove Empty Associated Class" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.2">
+      <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+    </refactoringUnits>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="selectedEObject" type="org.eclipse.uml2.uml.Class"/>
+  </mainRefactoringUnit>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.0/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.0/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.0/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.0/@multiInputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@helperUnits.0/@inputPort"/>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.1/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@helperUnits.1/@inputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@helperUnits.2/@inputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@helperUnits.2/@outputPort" target="//@mainRefactoringUnit/@helperUnits.3/@inputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@helperUnits.3/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.0/@singleInputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@helperUnits.3/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.2/@inputPorts.0"/>
+  <modelRefactorings name="Move Attribute" refId="org.eclipse.emf.refactor.refactorings.uml24.moveattribute" label="Move Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <modelRefactorings name="Move Operation" refId="org.eclipse.emf.refactor.refactorings.uml24.moveoperation" label="Move Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <modelRefactorings name="Remove Empty Associated Class" refId="org.eclipse.emf.refactor.refactorings.uml24.removeemptyassociatedclass" label="Remove Empty Associated Class" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+  </modelRefactorings>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="GetOwnedAttributesNoAssocEnds" helperId="comrel.getownedattributesnoassocends" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="property_s" type="org.eclipse.uml2.uml.Property"/>
+  </helper>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="GetOwnedOperations" helperId="comrel.getownedoperations" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="operation_s" type="org.eclipse.uml2.uml.Operation"/>
+  </helper>
+  <helper xsi:type="comrel:SingleFeatureHelper" name="Get Associated Class" helperId="comrel.getassociatedclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_in" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="class_out" type="org.eclipse.uml2.uml.Class"/>
+  </helper>
+  <helper xsi:type="comrel:SingleFeatureHelper" name="Get Class  Name" helperId="comrel.getclassname" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_in" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="string_out" type="java.lang.String"/>
+  </helper>
+</comrel:CompositeRefactoring>

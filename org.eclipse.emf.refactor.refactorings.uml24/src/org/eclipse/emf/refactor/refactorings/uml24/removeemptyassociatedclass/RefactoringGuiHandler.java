@@ -2,11 +2,12 @@
  * <copyright>
  * </copyright>
  *
- * $Id: RefactoringGuiHandlerHenshin.javajet,v 1.2 2012/11/26 15:39:38 tarendt Exp $
+ * $Id: RefactoringGuiHandler.javajet,v 1.1 2010/07/15 13:08:44 tarendt Exp $
  */
-package org.eclipse.emf.refactor.refactorings.uml24.renameattribute;
+ package org.eclipse.emf.refactor.refactorings.uml24.removeemptyassociatedclass;
 
 import java.util.List;
+
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.refactor.refactoring.core.Refactoring;
 import org.eclipse.emf.refactor.refactoring.interfaces.IGuiHandler;
@@ -22,10 +23,10 @@ public class RefactoringGuiHandler implements IGuiHandler {
 	 * Refactoring supported by the GuiHandler.
 	 * @generated
 	 */
-	private Refactoring parent;
+	Refactoring parent;
 	
 	/**
-	 * @see org.eclipse.emf.refactor.refactoring.interfaces.IGuiHandler#getParent()
+	 * @see org.eclipse.emf.refactor.common.core.ui.IGuiHandler#getParent()
 	 * @generated
 	 */
 	@Override
@@ -34,27 +35,27 @@ public class RefactoringGuiHandler implements IGuiHandler {
 	}
 
 	/**
-	 * @see org.eclipse.emf.refactor.refactoring.interfaces.IGuiHandler#
-	 * setParent(org.eclipse.emf.refactor.refactoring.core.Refactoring)
+	 * @see org.eclipse.emf.refactor.common.core.ui.IGuiHandler#
+	 * setParent(org.eclipse.emf.refactor.common.core.Refactoring)
 	 * @generated
 	 */
 	@Override
-	public void setParent(Refactoring refactoring) {
-		this.parent = refactoring;
+	public void setParent(Refactoring emfRefactoring) {
+		this.parent = emfRefactoring;
 	}
 		
 	/**
-	 * @see org.eclipse.emf.refactor.refactoring.interfaces.IGuiHandler#show()
+	 * @see org.eclipse.emf.refactor.common.core.ui.IGuiHandler#show()
 	 * @generated
 	 */
 	@Override
 	public RefactoringWizard show() {
-		return new org.eclipse.emf.refactor.refactorings.uml24.renameattribute.RefactoringWizard
-		((RefactoringController) this.parent.getController());
+		return new org.eclipse.emf.refactor.refactorings.uml24.removeemptyassociatedclass.RefactoringWizard
+		((RefactoringController)this.parent.getController());
 	}
 	
 	/**
-	 * @see org.eclipse.emf.refactor.refactoring.interfaces.IGuiHandler#
+	 * @see org.eclipse.emf.refactor.common.core.ui.IGuiHandler#
 	 * showInMenu(java.util.List)
 	 * @generated
 	 */
@@ -63,7 +64,7 @@ public class RefactoringGuiHandler implements IGuiHandler {
 		if (selection.size() > 1) return false;
 		for(EObject o:selection){
 			if(null != o){
-				if (o instanceof org.eclipse.uml2.uml.Property) {
+				if (o instanceof org.eclipse.uml2.uml.Class) {
 					return true;
 				}
 			} 

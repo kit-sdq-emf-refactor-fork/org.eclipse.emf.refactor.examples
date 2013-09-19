@@ -88,6 +88,12 @@
       id="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass"
       menulabel="Extract Superclass"
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+   <refactoring
+      controller="org.eclipse.emf.refactor.refactorings.uml24.inlineclass.RefactoringController"
+      gui="org.eclipse.emf.refactor.refactorings.uml24.inlineclass.RefactoringGuiHandler"
+      id="org.eclipse.emf.refactor.refactorings.uml24.inlineclass"
+      menulabel="Inline Class"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
    <refactoring 
       controller="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject.RefactoringController" 
       gui="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject.RefactoringGuiHandler" 
