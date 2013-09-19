@@ -25,6 +25,12 @@
       id="org.eclipse.emf.refactor.refactorings.uml24.moveattribute"
       menulabel="Move Attribute"
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+<refactoring
+      controller="org.eclipse.emf.refactor.refactorings.uml24.moveoperation.RefactoringController"
+      gui="org.eclipse.emf.refactor.refactorings.uml24.moveoperation.RefactoringGuiHandler"
+      id="org.eclipse.emf.refactor.refactorings.uml24.moveoperation"
+      menulabel="Move Operation"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 <refactoring 
       controller="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringController" 
       gui="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringGuiHandler" 
