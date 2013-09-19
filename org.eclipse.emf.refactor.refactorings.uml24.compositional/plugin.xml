@@ -82,5 +82,12 @@
       id="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass"
       menulabel="Extract Superclass"
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+   <refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject" 
+      menulabel="Introduce Parameter Object" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+   
 </extension>
 </plugin>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comrel:CompositeRefactoring xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comrel="http://comrel/0.1" name="introduceparameterobject" refId="comrel.introduceparameterobject" label="Introduce Parameter Object" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+  <mainRefactoringUnit xsi:type="comrel:SequentialUnit" name="introduceparameterobject">
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="Get Operations Having Parameters" helperUnitId="comrel.getoperationshavingparameters" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.0">
+      <inputPort name="parameterList" type="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.UmlParameterList"/>
+      <outputPort name="operations" type="org.eclipse.uml2.uml.Operation"/>
+    </helperUnits>
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="Get Parameters Equal To Parameters" helperUnitId="comrel.getparametersequaltoparameters" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.1">
+      <inputPort name="parameterList" type="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.UmlParameterList"/>
+      <outputPort name="parameters" type="org.eclipse.uml2.uml.Parameter"/>
+    </helperUnits>
+    <refactoringUnits xsi:type="comrel:AtomicUnit" name="Create Class with Attributes from Parameter List" seqExecutionOrder="1" unitId="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist" label="Create Class with Attributes from Parameter List" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.0">
+      <inputPorts name="selectedEObject" description="" type="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.UmlParameterList"/>
+      <inputPorts name="className" description="" type="java.lang.String"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="2">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Add Parameter" unitId="org.eclipse.emf.refactor.refactorings.uml24.addparameter" label="Add Parameter" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.1">
+        <inputPorts name="paramType" description="" type="java.lang.String"/>
+        <inputPorts name="paramName" description="" type="java.lang.String"/>
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+      </refactoringUnit>
+      <singleInputPorts name="paramName" type="java.lang.String"/>
+      <singleInputPorts name="paramType" type="java.lang.String"/>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Operation"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="3">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Remove Parameter" unitId="org.eclipse.emf.refactor.refactorings.uml24.removeparameter" label="Remove Parameter" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.2">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Parameter"/>
+      </refactoringUnit>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Parameter"/>
+    </refactoringUnits>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="paramName" type="java.lang.String"/>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="className" type="java.lang.String"/>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="selectedEObject" type="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.UmlParameterList"/>
+  </mainRefactoringUnit>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.2"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.1" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.2/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.2" target="//@mainRefactoringUnit/@refactoringUnits.0/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.2" target="//@mainRefactoringUnit/@helperUnits.0/@inputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.2" target="//@mainRefactoringUnit/@helperUnits.1/@inputPort"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.0/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.1/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.2/@multiInputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.1" target="//@mainRefactoringUnit/@refactoringUnits.0/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.1" target="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.1"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0"/>
+  <modelRefactorings name="Create Class with Attributes from Parameter List" refId="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist" label="Create Class with Attributes from Parameter List" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.UmlParameterList"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <modelRefactorings name="Add Parameter" refId="org.eclipse.emf.refactor.refactorings.uml24.addparameter" label="Add Parameter" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="paramType" description="" type="java.lang.String"/>
+    <inputPorts name="paramName" description="" type="java.lang.String"/>
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+  </modelRefactorings>
+  <modelRefactorings name="Remove Parameter" refId="org.eclipse.emf.refactor.refactorings.uml24.removeparameter" label="Remove Parameter" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Parameter"/>
+  </modelRefactorings>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="Get Operations Having Parameters" helperId="comrel.getoperationshavingparameters" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="parameterList" type="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.UmlParameterList"/>
+    <outputPort name="operations" type="org.eclipse.uml2.uml.Operation"/>
+  </helper>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="Get Parameters Equal To Parameters" helperId="comrel.getparametersequaltoparameters" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="parameterList" type="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.UmlParameterList"/>
+    <outputPort name="parameters" type="org.eclipse.uml2.uml.Parameter"/>
+  </helper>
+</comrel:CompositeRefactoring>
