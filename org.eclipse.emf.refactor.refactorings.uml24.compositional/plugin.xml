@@ -77,6 +77,12 @@
       menulabel="Create Class with Attributes from Parameter List" 
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
    <refactoring
+      controller="org.eclipse.emf.refactor.refactorings.uml24.extractclass.RefactoringController"
+      gui="org.eclipse.emf.refactor.refactorings.uml24.extractclass.RefactoringGuiHandler"
+      id="org.eclipse.emf.refactor.refactorings.uml24.extractclass"
+      menulabel="Extract Class"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+   <refactoring
       controller="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass.RefactoringController"
       gui="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass.RefactoringGuiHandler"
       id="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass"

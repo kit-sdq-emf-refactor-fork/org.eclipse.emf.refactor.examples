@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comrel:CompositeRefactoring xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comrel="http://comrel/0.1" name="extractclass" refId="comrel.extractclass" label="Extract Class" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+  <mainRefactoringUnit xsi:type="comrel:SequentialUnit" name="extractclass">
+    <refactoringUnits xsi:type="comrel:AtomicUnit" name="Create Associated Class" seqExecutionOrder="1" unitId="org.eclipse.emf.refactor.refactorings.uml24.createassociatedclass" label="Create Associated Class" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.0">
+      <inputPorts name="roleName1" description="" type="java.lang.String"/>
+      <inputPorts name="associationName" description="" type="java.lang.String"/>
+      <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+      <inputPorts name="className" description="" type="java.lang.String"/>
+      <inputPorts name="roleName2" description="" type="java.lang.String"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="2">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Move Attribute" unitId="org.eclipse.emf.refactor.refactorings.uml24.moveattribute" label="Move Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.1">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+        <inputPorts name="className" description="" type="java.lang.String"/>
+      </refactoringUnit>
+      <singleInputPorts name="className" type="java.lang.String"/>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Property"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="3">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Move Operation" unitId="org.eclipse.emf.refactor.refactorings.uml24.moveoperation" label="Move Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.2">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+        <inputPorts name="className" description="" type="java.lang.String"/>
+      </refactoringUnit>
+      <singleInputPorts name="className" type="java.lang.String"/>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Operation"/>
+    </refactoringUnits>
+    <inputPorts xsi:type="comrel:MultiInputPort" name="operationsList" type="org.eclipse.uml2.uml.Operation"/>
+    <inputPorts xsi:type="comrel:MultiInputPort" name="attributesList" type="org.eclipse.uml2.uml.Property"/>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="className" description="Name of the new associated class" type="java.lang.String"/>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="associationName" description="Name of the new association" type="java.lang.String"/>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="selectedEObject" type="org.eclipse.uml2.uml.Class"/>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="roleName1" description="Name of the new association end role" type="java.lang.String"/>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="roleName2" description="Name of the opposite association end role" type="java.lang.String"/>
+  </mainRefactoringUnit>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.2/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.2/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@inputPorts.1" target="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.2/@multiInputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.6" target="//@mainRefactoringUnit/@refactoringUnits.0/@inputPorts.4"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.5" target="//@mainRefactoringUnit/@refactoringUnits.0/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.4" target="//@mainRefactoringUnit/@refactoringUnits.0/@inputPorts.2"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.3" target="//@mainRefactoringUnit/@refactoringUnits.0/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.2" target="//@mainRefactoringUnit/@refactoringUnits.0/@inputPorts.3"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.2" target="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.2" target="//@mainRefactoringUnit/@refactoringUnits.2/@singleInputPorts.0"/>
+  <modelRefactorings name="Create Associated Class" refId="org.eclipse.emf.refactor.refactorings.uml24.createassociatedclass" label="Create Associated Class" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="roleName1" description="" type="java.lang.String"/>
+    <inputPorts name="associationName" description="" type="java.lang.String"/>
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+    <inputPorts name="roleName2" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <modelRefactorings name="Move Attribute" refId="org.eclipse.emf.refactor.refactorings.uml24.moveattribute" label="Move Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <modelRefactorings name="Move Operation" refId="org.eclipse.emf.refactor.refactorings.uml24.moveoperation" label="Move Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+</comrel:CompositeRefactoring>
