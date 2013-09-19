@@ -106,6 +106,12 @@
       id="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject" 
       menulabel="Introduce Parameter Object" 
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+   <refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.removesuperclass.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.removesuperclass.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.removesuperclass" 
+      menulabel="Remove Superclass" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
    
 </extension>
 </plugin>

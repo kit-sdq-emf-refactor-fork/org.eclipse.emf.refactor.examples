@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comrel:CompositeRefactoring xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comrel="http://comrel/0.1" name="removesuperclass" refId="comrel.removesuperclass" label="Remove Superclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+  <mainRefactoringUnit xsi:type="comrel:SequentialUnit" name="removesuperclass">
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="GetOwnedAttributes" helperUnitId="comrel.getownedattributes" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.0">
+      <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="property_s" type="org.eclipse.uml2.uml.Property"/>
+    </helperUnits>
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="GetOwnedOperations" helperUnitId="comrel.getownedoperations" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.1">
+      <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="operation_s" type="org.eclipse.uml2.uml.Operation"/>
+    </helperUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="1">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Push Down Attribute" unitId="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute" label="Push Down Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.0">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+      </refactoringUnit>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Property"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="2">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Push Down Operation" unitId="org.eclipse.emf.refactor.refactorings.uml24.pushdownoperation" label="Push Down Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.1">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+      </refactoringUnit>
+      <multiInputPort name="selectedEObjects" type="org.eclipse.uml2.uml.Operation"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:AtomicUnit" name="Remove Empty Superclass" seqExecutionOrder="3" unitId="org.eclipse.emf.refactor.refactorings.uml24.removeemptysuperclass" label="Remove Empty Superclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.2">
+      <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+    </refactoringUnits>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="selectedEObject" type="org.eclipse.uml2.uml.Class"/>
+  </mainRefactoringUnit>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.0/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.0/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.0/@multiInputPort"/>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.1/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.2/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@helperUnits.0/@inputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@helperUnits.1/@inputPort"/>
+  <modelRefactorings name="Push Down Attribute" refId="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute" label="Push Down Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+  </modelRefactorings>
+  <modelRefactorings name="Push Down Operation" refId="org.eclipse.emf.refactor.refactorings.uml24.pushdownoperation" label="Push Down Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+  </modelRefactorings>
+  <modelRefactorings name="Remove Empty Superclass" refId="org.eclipse.emf.refactor.refactorings.uml24.removeemptysuperclass" label="Remove Empty Superclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+  </modelRefactorings>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="GetOwnedAttributes" helperId="comrel.getownedattributes" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="property_s" type="org.eclipse.uml2.uml.Property"/>
+  </helper>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="GetOwnedOperations" helperId="comrel.getownedoperations" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="operation_s" type="org.eclipse.uml2.uml.Operation"/>
+  </helper>
+</comrel:CompositeRefactoring>
