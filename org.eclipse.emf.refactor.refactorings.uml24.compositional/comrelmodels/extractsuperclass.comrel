@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<comrel:CompositeRefactoring xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:comrel="http://comrel/0.1" name="extractsuperclass" refId="comrel.extractsuperclass" label="Extract Superclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+  <mainRefactoringUnit xsi:type="comrel:SequentialUnit" name="extractsuperclass">
+    <helperUnits xsi:type="comrel:SingleFilterUnit" name="Get First Class" helperUnitId="comrel.getfirstclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" singleFilterHelper="//@helper.0">
+      <inputPort name="class_s" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+    </helperUnits>
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="GetOwnedAttributes" helperUnitId="comrel.getownedattributes" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.1">
+      <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="property_s" type="org.eclipse.uml2.uml.Property"/>
+    </helperUnits>
+    <helperUnits xsi:type="comrel:MultiFeatureUnit" name="GetOwnedOperations" helperUnitId="comrel.getownedoperations" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" multiFeatureHelper="//@helper.2">
+      <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+      <outputPort name="operation_s" type="org.eclipse.uml2.uml.Operation"/>
+    </helperUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="1">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Create Superclass" unitId="de.unimarburg.swt.refactorings.uml.createsuperclass" label="Create Superclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.0">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+        <inputPorts name="className" description="" type="java.lang.String"/>
+      </refactoringUnit>
+      <singleInputPorts name="className" type="java.lang.String"/>
+      <multiInputPort name="classList" description="" type="org.eclipse.uml2.uml.Class"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="2" strict="false" lblStrict="non strict">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Pull Up Attribute" unitId="de.unimarburg.swt.refactorings.uml.pullupattribute" label="Pull Up Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.1">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+        <inputPorts name="className" description="" type="java.lang.String"/>
+      </refactoringUnit>
+      <singleInputPorts name="className" type="java.lang.String"/>
+      <multiInputPort name="attributeList" type="org.eclipse.uml2.uml.Property"/>
+    </refactoringUnits>
+    <refactoringUnits xsi:type="comrel:SingleQueuedUnit" seqExecutionOrder="3" strict="false" lblStrict="non strict">
+      <refactoringUnit xsi:type="comrel:AtomicUnit" name="Pull Up Operation" unitId="de.unimarburg.swt.refactorings.uml.pullupoperation" label="Pull Up Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML" modelRefactoring="//@modelRefactorings.2">
+        <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+        <inputPorts name="className" description="" type="java.lang.String"/>
+      </refactoringUnit>
+      <singleInputPorts name="className" type="java.lang.String"/>
+      <multiInputPort name="operationList" type="org.eclipse.uml2.uml.Operation"/>
+    </refactoringUnits>
+    <inputPorts xsi:type="comrel:SingleInputPort" name="className" description="Name of the new superclass" type="java.lang.String"/>
+    <inputPorts xsi:type="comrel:MultiInputPort" name="selectedEObjects" type="org.eclipse.uml2.uml.Class"/>
+  </mainRefactoringUnit>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.0/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.0/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:MultiSinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.2/@multiInputPort" target="//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit/@inputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@refactoringUnits.2/@singleInputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit/@inputPorts.1"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.0/@singleInputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@inputPorts.0" target="//@mainRefactoringUnit/@refactoringUnits.2/@singleInputPorts.0"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@inputPorts.1" target="//@mainRefactoringUnit/@refactoringUnits.0/@multiInputPort"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@inputPorts.1" target="//@mainRefactoringUnit/@helperUnits.0/@inputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@helperUnits.0/@outputPort" target="//@mainRefactoringUnit/@helperUnits.1/@inputPort"/>
+  <portMappings xsi:type="comrel:SinglePortMapping" source="//@mainRefactoringUnit/@helperUnits.0/@outputPort" target="//@mainRefactoringUnit/@helperUnits.2/@inputPort"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.1/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort"/>
+  <portMappings xsi:type="comrel:MultiPortMapping" source="//@mainRefactoringUnit/@helperUnits.2/@outputPort" target="//@mainRefactoringUnit/@refactoringUnits.2/@multiInputPort"/>
+  <modelRefactorings name="Create Superclass" refId="org.eclipse.emf.refactor.refactorings.uml24.createsuperclass" label="Create Superclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Class"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <modelRefactorings name="Pull Up Attribute" refId="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute" label="Pull Up Attribute" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Property"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <modelRefactorings name="Pull Up Operation" refId="org.eclipse.emf.refactor.refactorings.uml24.pullupoperation" label="Pull Up Operation" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPorts name="selectedEObject" description="" type="org.eclipse.uml2.uml.Operation"/>
+    <inputPorts name="className" description="" type="java.lang.String"/>
+  </modelRefactorings>
+  <helper xsi:type="comrel:SingleFilterHelper" name="Get First Class" helperId="comrel.getfirstclass" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_s" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+  </helper>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="GetOwnedAttributes" helperId="comrel.getownedattributes" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="property_s" type="org.eclipse.uml2.uml.Property"/>
+  </helper>
+  <helper xsi:type="comrel:MultiFeatureHelper" name="GetOwnedOperations" helperId="comrel.getownedoperations" namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+    <inputPort name="class_" type="org.eclipse.uml2.uml.Class"/>
+    <outputPort name="operation_s" type="org.eclipse.uml2.uml.Operation"/>
+  </helper>
+</comrel:CompositeRefactoring>

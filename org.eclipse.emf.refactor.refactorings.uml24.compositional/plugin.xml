@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="comrel.singlefilter">
+      <singlefilter 
+      		class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetFirstClass" 
+      		description="" 
+      		id="comrel.getfirstclass" 
+      		name="Get First Class" 
+      		namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+	  </singlefilter>
+   </extension>
+<extension point="comrel.multifeature">
+<multifeature 
+	  class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetOwnedAttributes" 
+	  description="" 
+	  id="comrel.getownedattributes" 
+	  name="GetOwnedAttributes" 
+	  namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</multifeature>
+<multifeature
+      class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetOwnedOperations"
+      id="comrel.getownedoperations"
+      name="GetOwnedOperations"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</multifeature>
+<multifeature
+      class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetParametersEqualToParameters"
+      description="Returns a list of parameters within a class equal to a parameter list snippet."
+      id="comrel.getparametersequaltoparameters"
+      name="Get Parameters Equal To Parameters"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</multifeature>
+<multifeature
+      class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetOwnedAttributesNoAssocEnds"
+      id="comrel.getownedattributesnoassocends"
+      name="GetOwnedAttributesNoAssocEnds"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</multifeature>
+<multifeature
+      class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetOperationsHavingParameters"
+      description="Returns a list of operations within a class with the given parameter list snippet."
+      id="comrel.getoperationshavingparameters"
+      name="Get Operations Having Parameters"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</multifeature>
+<multifeature
+      class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetAllInterfaces"
+      description="Returns all interfaces owned by the given package."
+      id="ecmfa.getallattributes"
+      name="Get All Interfaces"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</multifeature>
+</extension>
+<extension point="comrel.singlefeature">
+<singlefeature 
+	  class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetAssociatedClass" 
+	  description="" 
+	  id="comrel.getassociatedclass" 
+	  name="Get Associated Class" 
+	  namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</singlefeature>
+<singlefeature
+      class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetClassName"
+      id="comrel.getclassname"
+      name="Get Class  Name"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
+</singlefeature>
+</extension>
+<extension
+      point="org.eclipse.emf.refactor.refactorings">
+   <refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.createclasswithattributesfromparameterlist" 
+      menulabel="Create Class with Attributes from Parameter List" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+   <refactoring
+      controller="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass.RefactoringController"
+      gui="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass.RefactoringGuiHandler"
+      id="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass"
+      menulabel="Extract Superclass"
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+</extension>
+</plugin>

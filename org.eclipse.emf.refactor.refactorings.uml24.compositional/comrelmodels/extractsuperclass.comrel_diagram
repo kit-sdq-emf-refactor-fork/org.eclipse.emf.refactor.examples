@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:comrel="http://comrel/0.1" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_5yoD0OnzEeCZ8NkEF9Ty2Q" type="Comrel" name="extractsuperclass.comrel_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_AB7esOn0EeCZ8NkEF9Ty2Q" type="2005" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_AB7es-n0EeCZ8NkEF9Ty2Q" type="5083"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_AB7etOn0EeCZ8NkEF9Ty2Q" type="7079">
+      <children xmi:type="notation:Shape" xmi:id="_JbXd0On1EeCZ8NkEF9Ty2Q" type="3063" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_JbXd0un1EeCZ8NkEF9Ty2Q" type="5046"/>
+        <children xmi:type="notation:Node" xmi:id="_JcHEsOn1EeCZ8NkEF9Ty2Q" type="3017">
+          <children xmi:type="notation:DecorationNode" xmi:id="_JcHEten1EeCZ8NkEF9Ty2Q" type="5014">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_JcHEtun1EeCZ8NkEF9Ty2Q" x="-100" y="20"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_JcHEsen1EeCZ8NkEF9Ty2Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_JcHEsun1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_JcHEs-n1EeCZ8NkEF9Ty2Q"/>
+          <element xmi:type="comrel:MultiInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.0/@inputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JcHEtOn1EeCZ8NkEF9Ty2Q" x="-19" y="8"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_JcHEt-n1EeCZ8NkEF9Ty2Q" type="3018" fontName="Segoe UI">
+          <children xmi:type="notation:DecorationNode" xmi:id="_JcHEuen1EeCZ8NkEF9Ty2Q" type="5015">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_JcHEuun1EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+          </children>
+          <element xmi:type="comrel:SingleOutputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.0/@outputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JcHEuOn1EeCZ8NkEF9Ty2Q" x="213" y="12"/>
+        </children>
+        <element xmi:type="comrel:SingleFilterUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JbXd0en1EeCZ8NkEF9Ty2Q" x="464" y="16"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_PwVb0On1EeCZ8NkEF9Ty2Q" type="3062" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_PwVb0un1EeCZ8NkEF9Ty2Q" type="5045"/>
+        <children xmi:type="notation:Shape" xmi:id="_PwfM0On1EeCZ8NkEF9Ty2Q" type="3013" fontName="Segoe UI">
+          <children xmi:type="notation:DecorationNode" xmi:id="_PwfM0un1EeCZ8NkEF9Ty2Q" type="5010">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_PwfM0-n1EeCZ8NkEF9Ty2Q" x="-94" y="-20"/>
+          </children>
+          <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.1/@inputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PwfM0en1EeCZ8NkEF9Ty2Q" x="192" y="-19"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_PwfM1On1EeCZ8NkEF9Ty2Q" type="3015">
+          <children xmi:type="notation:DecorationNode" xmi:id="_PwfM2en1EeCZ8NkEF9Ty2Q" type="5012">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_PwfM2un1EeCZ8NkEF9Ty2Q" x="40" y="20"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_PwfM1en1EeCZ8NkEF9Ty2Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_PwfM1un1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_PwfM1-n1EeCZ8NkEF9Ty2Q"/>
+          <element xmi:type="comrel:MultiOutputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.1/@outputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PwfM2On1EeCZ8NkEF9Ty2Q" x="72" y="39"/>
+        </children>
+        <element xmi:type="comrel:MultiFeatureUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PwVb0en1EeCZ8NkEF9Ty2Q" x="560" y="100"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_TjI_EOn1EeCZ8NkEF9Ty2Q" type="3062" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_TjI_Eun1EeCZ8NkEF9Ty2Q" type="5045"/>
+        <children xmi:type="notation:Shape" xmi:id="_TjI_E-n1EeCZ8NkEF9Ty2Q" type="3013" fontName="Segoe UI">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TjSwEOn1EeCZ8NkEF9Ty2Q" type="5010">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TjSwEen1EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+          </children>
+          <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.2/@inputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TjI_FOn1EeCZ8NkEF9Ty2Q" x="53" y="-19"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_TjSwEun1EeCZ8NkEF9Ty2Q" type="3015">
+          <children xmi:type="notation:DecorationNode" xmi:id="_TjSwF-n1EeCZ8NkEF9Ty2Q" type="5012">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_TjSwGOn1EeCZ8NkEF9Ty2Q" y="5"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_TjSwE-n1EeCZ8NkEF9Ty2Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_TjSwFOn1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_TjSwFen1EeCZ8NkEF9Ty2Q"/>
+          <element xmi:type="comrel:MultiOutputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.2/@outputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TjSwFun1EeCZ8NkEF9Ty2Q" x="89" y="39"/>
+        </children>
+        <element xmi:type="comrel:MultiFeatureUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@helperUnits.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TjI_Een1EeCZ8NkEF9Ty2Q" x="861" y="102"/>
+      </children>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_AB7eten0EeCZ8NkEF9Ty2Q" type="7080">
+      <children xmi:type="notation:Shape" xmi:id="_CZPUUOn0EeCZ8NkEF9Ty2Q" type="3065" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_CZPUU-n0EeCZ8NkEF9Ty2Q" type="5061"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_CZPUVOn0EeCZ8NkEF9Ty2Q" type="7049"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_CZPUVen0EeCZ8NkEF9Ty2Q" type="7050">
+          <children xmi:type="notation:Shape" xmi:id="_El1HsOn0EeCZ8NkEF9Ty2Q" type="3068" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_El1Hsun0EeCZ8NkEF9Ty2Q" type="5048"/>
+            <children xmi:type="notation:Shape" xmi:id="_El-RoOn0EeCZ8NkEF9Ty2Q" type="3035" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_El-Roun0EeCZ8NkEF9Ty2Q" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_El-Ro-n0EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+              </children>
+              <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit/@inputPorts.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_El-Roen0EeCZ8NkEF9Ty2Q" x="126" y="-19"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_El-RpOn0EeCZ8NkEF9Ty2Q" type="3035" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_El-Rpun0EeCZ8NkEF9Ty2Q" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_El-Rp-n0EeCZ8NkEF9Ty2Q" x="-20" y="-40"/>
+              </children>
+              <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit/@inputPorts.1"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_El-Rpen0EeCZ8NkEF9Ty2Q" x="42" y="-19"/>
+            </children>
+            <element xmi:type="comrel:AtomicUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.0/@refactoringUnit"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_El1Hsen0EeCZ8NkEF9Ty2Q" x="2" y="85"/>
+          </children>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_CZYeQOn0EeCZ8NkEF9Ty2Q" type="3024">
+          <children xmi:type="notation:DecorationNode" xmi:id="_CZYeRen0EeCZ8NkEF9Ty2Q" type="5021">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_CZYeRun0EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_CZYeQen0EeCZ8NkEF9Ty2Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_CZYeQun0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_CZYeQ-n0EeCZ8NkEF9Ty2Q"/>
+          <element xmi:type="comrel:MultiInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.0/@multiInputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CZYeROn0EeCZ8NkEF9Ty2Q" x="138" y="-19"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_MMLOAOn0EeCZ8NkEF9Ty2Q" type="3023" fontName="Segoe UI">
+          <children xmi:type="notation:DecorationNode" xmi:id="_MMLOAun0EeCZ8NkEF9Ty2Q" type="5020">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_MMLOA-n0EeCZ8NkEF9Ty2Q" x="-20" y="-40"/>
+          </children>
+          <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.0/@singleInputPorts.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MMLOAen0EeCZ8NkEF9Ty2Q" x="54" y="-19"/>
+        </children>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_CZPUUen0EeCZ8NkEF9Ty2Q"/>
+        <element xmi:type="comrel:SingleQueuedUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CZPUUun0EeCZ8NkEF9Ty2Q" x="14" y="78" width="337" height="247"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Pr7SYOn0EeCZ8NkEF9Ty2Q" type="3065" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_Pr7SY-n0EeCZ8NkEF9Ty2Q" type="5061"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_Pr7SZOn0EeCZ8NkEF9Ty2Q" type="7049"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_Pr7SZen0EeCZ8NkEF9Ty2Q" type="7050">
+          <children xmi:type="notation:Shape" xmi:id="_TtwJEOn0EeCZ8NkEF9Ty2Q" type="3068" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_TtwJEun0EeCZ8NkEF9Ty2Q" type="5048"/>
+            <children xmi:type="notation:Shape" xmi:id="_TtwJE-n0EeCZ8NkEF9Ty2Q" type="3035" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_TtwJFen0EeCZ8NkEF9Ty2Q" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_TtwJFun0EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+              </children>
+              <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TtwJFOn0EeCZ8NkEF9Ty2Q" x="131" y="-19"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_TtwJF-n0EeCZ8NkEF9Ty2Q" type="3035" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_TtwJGen0EeCZ8NkEF9Ty2Q" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_TtwJGun0EeCZ8NkEF9Ty2Q" x="-20" y="-40"/>
+              </children>
+              <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit/@inputPorts.1"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TtwJGOn0EeCZ8NkEF9Ty2Q" x="47" y="-19"/>
+            </children>
+            <element xmi:type="comrel:AtomicUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.1/@refactoringUnit"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TtwJEen0EeCZ8NkEF9Ty2Q" x="8" y="89"/>
+          </children>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Pr7SZun0EeCZ8NkEF9Ty2Q" type="3024">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Pr7Sa-n0EeCZ8NkEF9Ty2Q" type="5021">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Pr7SbOn0EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_Pr7SZ-n0EeCZ8NkEF9Ty2Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_Pr7SaOn0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_Pr7Saen0EeCZ8NkEF9Ty2Q"/>
+          <element xmi:type="comrel:MultiInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.1/@multiInputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pr7Saun0EeCZ8NkEF9Ty2Q" x="150" y="-19"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Y-lJgOn0EeCZ8NkEF9Ty2Q" type="3023" fontName="Segoe UI">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Y-lJgun0EeCZ8NkEF9Ty2Q" type="5020">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_Y-lJg-n0EeCZ8NkEF9Ty2Q" x="-20" y="-40"/>
+          </children>
+          <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.1/@singleInputPorts.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Y-lJgen0EeCZ8NkEF9Ty2Q" x="66" y="-19"/>
+        </children>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_Pr7SYen0EeCZ8NkEF9Ty2Q"/>
+        <element xmi:type="comrel:SingleQueuedUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Pr7SYun0EeCZ8NkEF9Ty2Q" x="374" y="76" width="367" height="249"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_cJzvYOn0EeCZ8NkEF9Ty2Q" type="3065" fontName="Segoe UI">
+        <children xmi:type="notation:DecorationNode" xmi:id="_cJzvY-n0EeCZ8NkEF9Ty2Q" type="5061"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_cJzvZOn0EeCZ8NkEF9Ty2Q" type="7049"/>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_cJzvZen0EeCZ8NkEF9Ty2Q" type="7050">
+          <children xmi:type="notation:Shape" xmi:id="_n66l8On0EeCZ8NkEF9Ty2Q" type="3068" fontName="Segoe UI">
+            <children xmi:type="notation:DecorationNode" xmi:id="_n66l8un0EeCZ8NkEF9Ty2Q" type="5048"/>
+            <children xmi:type="notation:Shape" xmi:id="_n66l8-n0EeCZ8NkEF9Ty2Q" type="3035" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_n66l9en0EeCZ8NkEF9Ty2Q" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_n66l9un0EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+              </children>
+              <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit/@inputPorts.0"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n66l9On0EeCZ8NkEF9Ty2Q" x="120" y="-19"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_n66l9-n0EeCZ8NkEF9Ty2Q" type="3035" fontName="Segoe UI">
+              <children xmi:type="notation:DecorationNode" xmi:id="_n66l-en0EeCZ8NkEF9Ty2Q" type="5026">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_n66l-un0EeCZ8NkEF9Ty2Q" x="-20" y="-40"/>
+              </children>
+              <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit/@inputPorts.1"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n66l-On0EeCZ8NkEF9Ty2Q" x="54" y="-19"/>
+            </children>
+            <element xmi:type="comrel:AtomicUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.2/@refactoringUnit"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_n66l8en0EeCZ8NkEF9Ty2Q" x="2" y="84"/>
+          </children>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_cJzvZun0EeCZ8NkEF9Ty2Q" type="3024">
+          <children xmi:type="notation:DecorationNode" xmi:id="_cJzva-n0EeCZ8NkEF9Ty2Q" type="5021">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_cJzvbOn0EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_cJzvZ-n0EeCZ8NkEF9Ty2Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_cJzvaOn0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_cJzvaen0EeCZ8NkEF9Ty2Q"/>
+          <element xmi:type="comrel:MultiInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.2/@multiInputPort"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cJzvaun0EeCZ8NkEF9Ty2Q" x="132" y="-19"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_rHU3kOn0EeCZ8NkEF9Ty2Q" type="3023" fontName="Segoe UI">
+          <children xmi:type="notation:DecorationNode" xmi:id="_rHU3kun0EeCZ8NkEF9Ty2Q" type="5020">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_rHU3k-n0EeCZ8NkEF9Ty2Q" x="-20" y="-40"/>
+          </children>
+          <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.2/@singleInputPorts.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHU3ken0EeCZ8NkEF9Ty2Q" x="66" y="-19"/>
+        </children>
+        <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_cJzvYen0EeCZ8NkEF9Ty2Q"/>
+        <element xmi:type="comrel:SingleQueuedUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit/@refactoringUnits.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cJzvYun0EeCZ8NkEF9Ty2Q" x="764" y="78" width="367" height="247"/>
+      </children>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_5WSQoOn0EeCZ8NkEF9Ty2Q" type="3027" fontName="Segoe UI">
+      <children xmi:type="notation:DecorationNode" xmi:id="_5WSQoun0EeCZ8NkEF9Ty2Q" type="5022">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_5WSQo-n0EeCZ8NkEF9Ty2Q" x="-20" y="-40"/>
+      </children>
+      <element xmi:type="comrel:SingleInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@inputPorts.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5WSQoen0EeCZ8NkEF9Ty2Q" x="78" y="-19"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_D5bfQOn1EeCZ8NkEF9Ty2Q" type="3028">
+      <children xmi:type="notation:DecorationNode" xmi:id="_D5bfRen1EeCZ8NkEF9Ty2Q" type="5023">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_D5bfRun1EeCZ8NkEF9Ty2Q" x="40" y="-20"/>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_D5bfQen1EeCZ8NkEF9Ty2Q"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_D5bfQun1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_D5bfQ-n1EeCZ8NkEF9Ty2Q"/>
+      <element xmi:type="comrel:MultiInputPort" href="extractsuperclass.comrel#//@mainRefactoringUnit/@inputPorts.1"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_D5bfROn1EeCZ8NkEF9Ty2Q" x="282" y="-19"/>
+    </children>
+    <styles xmi:type="notation:HintedDiagramLinkStyle" xmi:id="_AB7esen0EeCZ8NkEF9Ty2Q"/>
+    <element xmi:type="comrel:SequentialUnit" href="extractsuperclass.comrel#//@mainRefactoringUnit"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AB7esun0EeCZ8NkEF9Ty2Q" x="18" y="72" width="1165" height="637"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_5yoD0enzEeCZ8NkEF9Ty2Q"/>
+  <element xmi:type="comrel:CompositeRefactoring" href="extractsuperclass.comrel#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_KbGR8On0EeCZ8NkEF9Ty2Q" type="4003" source="_CZYeQOn0EeCZ8NkEF9Ty2Q" target="_El-RoOn0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_KbGR8en0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:MultiSinglePortMapping" href="extractsuperclass.comrel#//@portMappings.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KbGR8un0EeCZ8NkEF9Ty2Q" points="[-1, 10, 17, -249]$[-19, 249, -1, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_NJnGoOn0EeCZ8NkEF9Ty2Q" type="4001" source="_MMLOAOn0EeCZ8NkEF9Ty2Q" target="_El-RpOn0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_NJnGoen0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.1"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NJnGoun0EeCZ8NkEF9Ty2Q" points="[-3, 10, 71, -249]$[-76, 249, -2, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_XiCTAOn0EeCZ8NkEF9Ty2Q" type="4003" source="_Pr7SZun0EeCZ8NkEF9Ty2Q" target="_TtwJE-n0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_XiCTAen0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:MultiSinglePortMapping" href="extractsuperclass.comrel#//@portMappings.2"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_XiCTAun0EeCZ8NkEF9Ty2Q" points="[-2, 10, 35, -242]$[-40, 242, -3, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_aQjuwOn0EeCZ8NkEF9Ty2Q" type="4001" source="_Y-lJgOn0EeCZ8NkEF9Ty2Q" target="_TtwJF-n0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_aQjuwen0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.3"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_aQjuwun0EeCZ8NkEF9Ty2Q" points="[-8, 10, -1, -242]$[-8, 242, -1, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_p8MhMOn0EeCZ8NkEF9Ty2Q" type="4003" source="_cJzvZun0EeCZ8NkEF9Ty2Q" target="_n66l8-n0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_p8MhMen0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:MultiSinglePortMapping" href="extractsuperclass.comrel#//@portMappings.4"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_p8MhMun0EeCZ8NkEF9Ty2Q" points="[-2, 10, 29, -234]$[-31, 234, 0, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_r6D8EOn0EeCZ8NkEF9Ty2Q" type="4001" source="_rHU3kOn0EeCZ8NkEF9Ty2Q" target="_n66l9-n0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_r6D8Een0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.5"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r6D8Eun0EeCZ8NkEF9Ty2Q" points="[-3, 10, 67, -228]$[-71, 234, -1, -4]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r6NtEOn0EeCZ8NkEF9Ty2Q" id="(0.45,0.2)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_6xVSUOn0EeCZ8NkEF9Ty2Q" type="4001" source="_5WSQoOn0EeCZ8NkEF9Ty2Q" target="_MMLOAOn0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_6xVSUen0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.6"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6xVSUun0EeCZ8NkEF9Ty2Q" points="[-10, 7, 478, -361]$[-492, 358, -4, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_7_vmMOn0EeCZ8NkEF9Ty2Q" type="4001" source="_5WSQoOn0EeCZ8NkEF9Ty2Q" target="_Y-lJgOn0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_7_vmMen0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.7"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7_vmMun0EeCZ8NkEF9Ty2Q" points="[-4, 10, 106, -356]$[-114, 356, -4, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_84bhsOn0EeCZ8NkEF9Ty2Q" type="4001" source="_5WSQoOn0EeCZ8NkEF9Ty2Q" target="_rHU3kOn0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_84bhsen0EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.8"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_84bhsun0EeCZ8NkEF9Ty2Q" points="[9, 10, -337, -356]$[343, 356, -3, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_E2IYEOn1EeCZ8NkEF9Ty2Q" type="4002" source="_D5bfQOn1EeCZ8NkEF9Ty2Q" target="_CZYeQOn0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_E2IYEen1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:MultiPortMapping" href="extractsuperclass.comrel#//@portMappings.9"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_E2IYEun1EeCZ8NkEF9Ty2Q" points="[-10, 8, 410, -360]$[-424, 378, -4, 10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_KSHfoOn1EeCZ8NkEF9Ty2Q" type="4002" source="_D5bfQOn1EeCZ8NkEF9Ty2Q" target="_JcHEsOn1EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_KSHfoen1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:MultiPortMapping" href="extractsuperclass.comrel#//@portMappings.10"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KSHfoun1EeCZ8NkEF9Ty2Q" points="[10, 7, -86, -69]$[96, 66, 0, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_WHGJkOn1EeCZ8NkEF9Ty2Q" type="4001" source="_JcHEt-n1EeCZ8NkEF9Ty2Q" target="_PwfM0On1EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_WHGJken1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.11"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WHGJkun1EeCZ8NkEF9Ty2Q" points="[10, 10, -47, -43]$[54, 43, -3, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_W-u8MOn1EeCZ8NkEF9Ty2Q" type="4001" source="_JcHEt-n1EeCZ8NkEF9Ty2Q" target="_TjI_E-n1EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_W-u8Men1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:SinglePortMapping" href="extractsuperclass.comrel#//@portMappings.12"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_W-u8Mun1EeCZ8NkEF9Ty2Q" points="[10, 2, -227, -53]$[235, 45, -2, -10]"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_YTiL8On1EeCZ8NkEF9Ty2Q" type="4002" source="_PwfM1On1EeCZ8NkEF9Ty2Q" target="_Pr7SZun0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_YTiL8en1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:MultiPortMapping" href="extractsuperclass.comrel#//@portMappings.13"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_YTiL8un1EeCZ8NkEF9Ty2Q" points="[-3, 10, 105, -133]$[-40, 143, 68, 0]$[-98, 143, 10, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_YTiL8-n1EeCZ8NkEF9Ty2Q" id="(0.5,0.2)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ZDJD8On1EeCZ8NkEF9Ty2Q" type="4002" source="_TjSwEun1EeCZ8NkEF9Ty2Q" target="_cJzvZun0EeCZ8NkEF9Ty2Q">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ZDJD8en1EeCZ8NkEF9Ty2Q" fontName="Segoe UI"/>
+    <element xmi:type="comrel:MultiPortMapping" href="extractsuperclass.comrel#//@portMappings.14"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ZDJD8un1EeCZ8NkEF9Ty2Q" points="[1, 10, -54, -275]$[52, 275, -3, -10]"/>
+  </edges>
+</notation:Diagram>
