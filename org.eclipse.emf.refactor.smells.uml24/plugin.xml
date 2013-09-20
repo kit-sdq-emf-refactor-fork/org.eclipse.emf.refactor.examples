@@ -8,6 +8,13 @@
       modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
       modelsmell_name="Concrete Superclass">
 </modelsmell>
+<modelsmell 
+      id="org.eclipse.emf.refactor.smells.uml24.diamondinheritance" 
+      modelsmell_description="A Class inherits from another one multiple times" 
+      modelsmell_finderclass="org.eclipse.emf.refactor.smells.uml24.DiamondInheritance" 
+      modelsmell_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+      modelsmell_name="Diamond Inheritance">
+</modelsmell>
 <modelsmell
       id="org.eclipse.emf.refactor.smells.uml24.equalattributesinsiblingclasses"
       modelsmell_description="Each sibling class of the owning class of the attribute contains an equal attribute."
