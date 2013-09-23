@@ -32,12 +32,6 @@
       menulabel="Move Operation"
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
 <refactoring 
-      controller="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringController" 
-      gui="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute.RefactoringGuiHandler" 
-      id="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute" 
-      menulabel="Pull Up Attribute" 
-      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
-<refactoring 
       controller="org.eclipse.emf.refactor.refactorings.uml24.pullupoperation.RefactoringController" 
       gui="org.eclipse.emf.refactor.refactorings.uml24.pullupoperation.RefactoringGuiHandler" 
       id="org.eclipse.emf.refactor.refactorings.uml24.pullupoperation" 
