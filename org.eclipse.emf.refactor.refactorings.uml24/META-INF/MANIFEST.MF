@@ -13,4 +13,5 @@ Bundle-Activator: org.eclipse.emf.refactor.refactorings.uml24.Activato
 Bundle-SymbolicName: org.eclipse.emf.refactor.refactorings.uml24;singl
  eton:=true
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.eclipse.emf.refactor.refactorings.uml24
 
