@@ -15,6 +15,13 @@
       	 id="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute" 
       	 menulabel="Push Down Attribute" 
       	 namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
+      	 
+<refactoring 
+      controller="org.eclipse.emf.refactor.refactorings.uml24.removeemptysuperclass.RefactoringController" 
+      gui="org.eclipse.emf.refactor.refactorings.uml24.removeemptysuperclass.RefactoringGuiHandler" 
+      id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysuperclass" 
+      menulabel="Remove Empty Superclass" 
+      namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML"/>
       
 </extension>
 </plugin>
