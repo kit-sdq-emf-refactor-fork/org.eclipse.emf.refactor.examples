@@ -13,7 +13,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.uml2.uml,
  org.eclipse.emf.henshin.model;bundle-version="0.9.4"
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 0.7.0
+Bundle-Version: 0.8.0
 Bundle-Name: RefactoringsUML24Henshin
 Bundle-ManifestVersion: 2
 Bundle-Activator: org.eclipse.emf.refactor.refactorings.uml24.henshin.

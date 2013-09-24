@@ -3,7 +3,7 @@ Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
  f.ecore,org.eclipse.emf.refactor.metrics,org.eclipse.emf.refactor.met
  rics.henshin,org.eclipse.uml2.uml
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 0.7.0
+Bundle-Version: 0.8.0
 Bundle-Name: MetricsUML24Henshin
 Bundle-Activator: org.eclipse.emf.refactor.metrics.uml24.henshin.Activ
  ator
