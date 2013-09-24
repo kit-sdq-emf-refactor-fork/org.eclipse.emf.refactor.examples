@@ -35,9 +35,9 @@
 <metric id="org.eclipse.emf.refactor.metrics.uml24.maxditc" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.MaxDITC" 
 	metric_context="Class" 
-	metric_description="TDepth of Inheritance Tree (maximum due to multiple inheritance)" 
+	metric_description="Depth of Inheritance Tree (maximum due to multiple inheritance)" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
-	metric_name="MacDITC">
+	metric_name="MaxDITC">
 </metric>
 </extension>
 <extension point="org.eclipse.emf.refactor.metrics">
