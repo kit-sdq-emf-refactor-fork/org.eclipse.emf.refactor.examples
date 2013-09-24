@@ -7,9 +7,36 @@
             id="org.eclipse.emf.refactor.metrics.uml24.qacp"
             metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.QACP"
             metric_context="Package"
-            metric_description="Quota of abstract Classes within the Package"
+            metric_description="Quota of abstract classes within the package"
             metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
             metric_name="QACP">
+      </metric>
+   </extension>
+   <extension
+         point="org.eclipse.emf.refactor.metrics">
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nacm"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NACM"
+            metric_context="Model"
+            metric_description="Number of all ancestors of all classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NACM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ana"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.ANA"
+            metric_context="Model"
+            metric_description="Average number of ancestors of all classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="ANA">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.maxdit"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.MaxDIT"
+            metric_context="Model"
+            metric_description="Maximum of all depths of inheritance trees"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="MaxDIT">
       </metric>
    </extension>
    <extension

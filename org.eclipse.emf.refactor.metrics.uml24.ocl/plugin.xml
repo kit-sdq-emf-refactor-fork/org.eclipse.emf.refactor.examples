@@ -1,12 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
 <extension point="org.eclipse.emf.refactor.metrics">
-	<metric id="org.eclipse.emf.refactor.metrics.uml24.nccp" 
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ncm" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NCM" 
+	metric_context="Model" 
+	metric_description="Number of Classes in the Model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NCM">
+</metric>
+</extension>
+<extension point="org.eclipse.emf.refactor.metrics">
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nccp" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NCCP" 
 	metric_context="Package" 
 	metric_description="Number of concrete Classes within the Package" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NCCP">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ninp" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NINP" 
+	metric_context="Package" 
+	metric_description="Number of Interfaces within the Package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NINP">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.natp" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NATP" 
+	metric_context="Package" 
+	metric_description="Number of Attributes in Classes within the Package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NATP">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nopp" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NOPP" 
+	metric_context="Package" 
+	metric_description="Number of Operations in Classes and Interfaces within the Package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NOPP">
 </metric>
 </extension>
 <extension point="org.eclipse.emf.refactor.metrics">

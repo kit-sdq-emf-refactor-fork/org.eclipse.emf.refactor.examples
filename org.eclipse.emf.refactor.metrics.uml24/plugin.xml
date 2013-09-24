@@ -25,6 +25,20 @@
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NEATC">
 </metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nsupc2" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NSUPC2" 
+	metric_context="Class" 
+	metric_description="Total number of ancestors of the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NSUPC2">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.maxditc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.MaxDITC" 
+	metric_context="Class" 
+	metric_description="TDepth of Inheritance Tree (maximum due to multiple inheritance)" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="MacDITC">
+</metric>
 </extension>
 <extension point="org.eclipse.emf.refactor.metrics">
 <metric id="org.eclipse.emf.refactor.metrics.uml24.neipo" 
@@ -34,5 +48,15 @@
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NEIPO">
 </metric>
+</extension>
+<extension point="org.eclipse.emf.refactor.metrics">
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nih" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NIH" 
+		metric_context="Model" 
+		metric_description="Total number of inheritance hierarchies in the model" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NIH">
+	</metric>
 </extension>
 </plugin>
