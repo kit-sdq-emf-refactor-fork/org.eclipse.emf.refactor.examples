@@ -1,4 +1,4 @@
-package org.eclipse.emf.refactor.metrics;
+package org.eclipse.emf.refactor.metrics.umlpack;
 
 import java.io.IOException;
 import java.net.URL;
