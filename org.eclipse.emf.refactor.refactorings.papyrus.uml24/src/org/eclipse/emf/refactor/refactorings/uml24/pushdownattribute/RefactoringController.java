@@ -140,6 +140,28 @@ public final class RefactoringController implements IController{
 				System.out.println(">>>> hallloooo >>>");
 				Class owningClass = selectedEObject.getClass_();
 				ArrayList<Class> subClasses = UmlUtils.getAllSubClasses(owningClass);
+				// ----- new
+				// execute: move selected attribute to specified superclass
+				Class firstSubClass = subClasses.get(0);			
+				owningClass.getOwnedAttributes().remove(selectedEObject);
+				firstSubClass.getOwnedAttributes().add(selectedEObject);
+				// if attribute is no association end: move shape to attribute compartment
+				View view = null;
+				if (selectedEObject.getAssociation() == null) {
+					view = getView(selectedEObject);
+					if (view != null) {
+						System.out.println("==> View: " + view);
+						BasicCompartment bcOld = (BasicCompartment) view.eContainer();
+						System.out.println("==> bcOld: " + bcOld);
+						bcOld.removeChild(view);
+						BasicCompartment bcNew = getAttributeCompartment(firstSubClass);
+						System.out.println("==> bcNew: " + bcNew);
+						System.out.println("==> bcNew: " + bcNew.getElement());
+						bcNew.insertChild(view);
+					}
+				}
+				subClasses.remove(0);
+				// ----- end new
 				for (Class subClass : subClasses) {
 					// create copy of the selected attribute
 					Copier attCopier = new Copier();
@@ -149,11 +171,11 @@ public final class RefactoringController implements IController{
 					subClass.getOwnedAttributes().add(newAttribute);
 					// if attribute is no association end: add shape copy to attribute compartments of each subclass
 					if (selectedEObject.getAssociation() == null) {
-						View view = getView(selectedEObject);
-						if (view != null) {
-							System.out.println("--> View: " + view);
+						View v = getView(selectedEObject);
+						if (v != null) {
+							System.out.println("--> View: " + v);
 							Copier viewCopier = new Copier();
-							View newView = (View) viewCopier.copy(view);
+							View newView = (View) viewCopier.copy(v);
 							newView.setElement(newAttribute);
 							BasicCompartment bc = getAttributeCompartment(subClass);
 							bc.insertChild(newView);
@@ -189,14 +211,16 @@ public final class RefactoringController implements IController{
 //					owningPackage.getPackagedElements().remove(assoc);
 //				}
 				// if attribute is no association end: remove shape from attribute compartment
-				if (selectedEObject.getAssociation() == null) {
-					View view = getView(selectedEObject);
-					if (view != null) {
-						System.out.println("--> View: " + view);
-						BasicCompartment bcOld = (BasicCompartment) view.eContainer();
-						bcOld.removeChild(view);
-					}
-				}
+				// -----  new
+//				if (selectedEObject.getAssociation() == null) {
+//					View v = getView(selectedEObject);
+//					if (v != null) {
+//						System.out.println("--> View: " + v);
+//						BasicCompartment bcOld = (BasicCompartment) v.eContainer();
+//						bcOld.removeChild(v);
+//					}
+//				}
+				// ----- end new
 				// execute: remove selected attribute from owning class
 				owningClass.getOwnedAttributes().remove(selectedEObject);
 			}
