@@ -85,7 +85,8 @@ public final class NEATC implements IMetricCalculator {
 
 	private EList<Class> getOtherClassses(Class cl) {
 		EList<Class> otherClasses = new BasicEList<Class>();
-		TreeIterator<EObject> iter = context.get(0).eResource().getAllContents();
+//		TreeIterator<EObject> iter = context.get(0).eResource().getAllContents();
+		TreeIterator<EObject> iter = getRoot(context.get(0)).eAllContents();
 		while (iter.hasNext()) {
 			EObject eObject = iter.next();
 			if (eObject instanceof Class) {
@@ -96,5 +97,10 @@ public final class NEATC implements IMetricCalculator {
 			}
 		}
 		return otherClasses;
+	}
+
+	private EObject getRoot(EObject eObject) {
+		if (eObject.eContainer() == null) return eObject;
+		else return getRoot(eObject.eContainer());
 	}
 }

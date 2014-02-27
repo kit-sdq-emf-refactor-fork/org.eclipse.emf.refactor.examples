@@ -7,9 +7,9 @@
             id="org.eclipse.emf.refactor.metrics.uml24.qacp"
             metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.QACP"
             metric_context="Package"
-            metric_description="Quota of abstract classes within the package"
+            metric_description="Quota of abstract classes within the package (Abstractness)"
             metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
-            metric_name="QACP">
+            metric_name="A">
       </metric>
    </extension>
    <extension
