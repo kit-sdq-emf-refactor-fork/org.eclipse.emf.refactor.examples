@@ -62,13 +62,12 @@ public class RefactoringGuiHandler implements IGuiHandler {
 	@Override
 	public boolean showInMenu(List<EObject> selection) {
 		if (selection.size() > 1) return false;
-		for(EObject o:selection){
-			if(null != o){
-				if (o instanceof org.eclipse.uml2.uml.Property) {
-					return true;
-				}
-			} 
-		}
+		EObject o = selection.get(0);
+		if(null != o){
+			if (o instanceof org.eclipse.uml2.uml.Property) {
+				return true;
+			}
+		} 
 		return false;
 	}
 

@@ -19,7 +19,25 @@ public final class EquallyNamedClasses implements IModelSmellFinder {
 	@Override
 	public LinkedList<LinkedList<EObject>> findSmell(EObject root) {
 		String fullPath = getFullPath(transformationPath + henshinFileName);
-		return HenshinRuntimeManager.run(root, fullPath);
+		LinkedList<LinkedList<EObject>> results = HenshinRuntimeManager.run(root, fullPath);
+		return removeRedundantResults(results);
+	}
+	
+	private LinkedList<LinkedList<EObject>> removeRedundantResults(
+			LinkedList<LinkedList<EObject>> results) {
+		LinkedList<LinkedList<EObject>> redundantResults = new LinkedList<LinkedList<EObject>>();
+		for (int i = 0; i < results.size(); i++) {
+			LinkedList<EObject> result1 = results.get(i);
+			for (int j = i+1; j < results.size(); j++) {
+				LinkedList<EObject> result2 = results.get(j);
+				if (result1.getFirst() == result2.getLast() && 
+						result2.getFirst() == result1.getLast()) {
+					redundantResults.add(result2);
+				}
+			}
+		}
+		results.removeAll(redundantResults);
+		return results;
 	}
 	
 	private String getFullPath(String transformationPath){

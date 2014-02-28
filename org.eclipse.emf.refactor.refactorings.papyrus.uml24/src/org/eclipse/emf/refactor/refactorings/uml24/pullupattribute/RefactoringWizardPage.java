@@ -6,15 +6,22 @@
  */
  package org.eclipse.emf.refactor.refactorings.uml24.pullupattribute;
 
+import java.util.List;
+
+import org.eclipse.emf.refactor.refactoring.runtime.ltk.ui.AbstractRefactoringWizard;
+import org.eclipse.emf.refactor.refactoring.runtime.ui.IInputPageButtonCreator;
+import org.eclipse.emf.refactor.refactoring.runtime.ui.InputPageButtonLoader;
 import org.eclipse.ltk.ui.refactoring.UserInputWizardPage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
-import org.eclipse.swt.widgets.Text;
+import org.eclipse.uml2.uml.Class;
+import org.eclipse.uml2.uml.Property;
 
 /**
  * Class for setting model refactoring specific parameters
@@ -36,11 +43,9 @@ public class RefactoringWizardPage extends
 	 */	
 	private Label classNameLabel;
 	
-	/**
-	 * TextField for each parameter.
-	 * @generated
-	 */
-	private Text classNameWidget;
+	private List<Class> superclasses;
+	
+	private Combo classNameWidget;
 
 	/**
 	 * Default constructor using a name and the controller of the 
@@ -52,7 +57,15 @@ public class RefactoringWizardPage extends
 	public RefactoringWizardPage
 		(String name, RefactoringController controller) {
 		super(name);
-		this.controller = controller;
+		this.controller = controller;		
+		this.setUpMembers();
+	}
+
+	private void setUpMembers() {
+		RefactoringDataManagement dataManagement = (RefactoringDataManagement) this.controller.getDataManagementObject();
+		Property attribute = (Property) dataManagement.getInPortByName(dataManagement.SELECTEDEOBJECT).getValue();
+		Class owningClass = attribute.getClass_();
+		superclasses = owningClass.getSuperClasses();
 	}
 
 	/**
@@ -65,8 +78,9 @@ public class RefactoringWizardPage extends
 	public void handleEvent(Event event) {		
 		getWizard().getContainer().updateButtons();
 				
-		if (classNameWidget != null) {
-			String className = classNameWidget.getText();
+		if (classNameWidget != null) {			
+			int index = classNameWidget.getSelectionIndex();
+			String className = superclasses.get(index).getName();
 			if (!className.isEmpty()){
 				((RefactoringDataManagement) 
 						this.controller.getDataManagementObject()).
@@ -79,7 +93,6 @@ public class RefactoringWizardPage extends
 						setValue("unspecified");
 			}
 		}
-
 	}
 	
 	/**
@@ -97,16 +110,23 @@ public class RefactoringWizardPage extends
 			
 		
 		classNameLabel = new Label(composite, SWT.NONE);
-		classNameLabel.setText("Name of the superclass the attribute should be moved to: ");
+		classNameLabel.setText("Name of the superclass to be pulled up to: ");
 		classNameLabel.setEnabled(true);
 		
-		classNameWidget = new Text(composite, SWT.BORDER);
+		classNameWidget = new Combo(composite, SWT.DROP_DOWN | SWT.BORDER);	    
 		classNameWidget.setToolTipText
 				("value of variable 'className'");
 		classNameWidget.setEnabled(true);
 		classNameWidget.setLayoutData(gd);
-		classNameWidget.addListener(SWT.Modify, this);
+		classNameWidget.addListener(SWT.Modify, this);	    
+	    for (int i = 0; i < superclasses.size(); i++) {
+	    	classNameWidget.add(superclasses.get(i).getQualifiedName());
+	    }		
 		
+		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
+		for(IInputPageButtonCreator creator : buttonCreators){
+			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
+		}		
 		
 		setControl(composite);
 	}

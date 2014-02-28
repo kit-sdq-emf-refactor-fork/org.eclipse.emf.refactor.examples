@@ -4,8 +4,8 @@
    <extension
          point="org.eclipse.emf.refactor.metrics">
       <metric
-            id="org.eclipse.emf.refactor.metrics.uml24.qacp"
-            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.QACP"
+            id="org.eclipse.emf.refactor.metrics.uml24.a"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.A"
             metric_context="Package"
             metric_description="Quota of abstract classes within the package (Abstractness)"
             metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
@@ -38,7 +38,48 @@
             metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
             metric_name="MaxDIT">
       </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.gevsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.GEvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of inheritance relations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="GEvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.atvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.ATvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of owned attributes and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="ATvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.opvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.OPvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of owned operations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="OPvsC">
+      </metric>
+      <metric
+            id="agvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.AGvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of aggregations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="AGvsC">
+      </metric>
+      <metric
+            id="asvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.ASvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of associations and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="ASvsC">
+      </metric>
    </extension>
+   
    <extension
          point="org.eclipse.emf.refactor.metrics">
       <metric

@@ -16,6 +16,7 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 
 /**
@@ -68,10 +69,14 @@ public class RefactoringWizardPage extends
 		gl.numColumns = 2;
 		composite.setLayout(gl);	
 		
-		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
-		for(IInputPageButtonCreator creator : buttonCreators){
-			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
-		}
+		Label newNameLabel = new Label(composite, SWT.NONE);
+		newNameLabel.setText("This refactoring does not have any parameters.");
+		newNameLabel.setEnabled(true);
+		
+//		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
+//		for(IInputPageButtonCreator creator : buttonCreators){
+//			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
+//		}
 		
 		setControl(composite);
 	}

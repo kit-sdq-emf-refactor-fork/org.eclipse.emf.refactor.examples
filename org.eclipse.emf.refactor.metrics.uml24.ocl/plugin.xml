@@ -4,37 +4,101 @@
 <metric id="org.eclipse.emf.refactor.metrics.uml24.ncm" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NCM" 
 	metric_context="Model" 
-	metric_description="Number of Classes in the Model" 
+	metric_description="Number of classes in the model" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NCM">
 </metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nim" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NIM" 
+	metric_context="Model" 
+	metric_description="Number of inheritance relations in the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NIM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.natm" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NATM" 
+	metric_context="Model" 
+	metric_description="Number of directly owned attributes in classes within the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NATM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nom" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NOM" 
+	metric_context="Model" 
+	metric_description="Number of directly owned operations in classes within the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NOM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nasm" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NASM" 
+	metric_context="Model" 
+	metric_description="Number of associations in the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NASM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nagm" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NAGM" 
+	metric_context="Model" 
+	metric_description="Number of aggregations in the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NAGM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nactm" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NACTM" 
+	metric_context="Model" 
+	metric_description="Number of attributes with class type in the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NACTM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nnoem" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NNOEM" 
+	metric_context="Model" 
+	metric_description="Number of navigable owned association ends in the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NNOEM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.npm" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NPM" 
+	metric_context="Model" 
+	metric_description="Number of packages in the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NPM">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.tnme" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.TNME" 
+	metric_context="Model" 
+	metric_description="Total number of elements in the model" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="TNME">
+</metric>
 </extension>
+
 <extension point="org.eclipse.emf.refactor.metrics">
 <metric id="org.eclipse.emf.refactor.metrics.uml24.nccp" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NCCP" 
 	metric_context="Package" 
-	metric_description="Number of concrete Classes within the Package" 
+	metric_description="Number of concrete classes within the package" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NCCP">
 </metric>
 <metric id="org.eclipse.emf.refactor.metrics.uml24.ninp" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NINP" 
 	metric_context="Package" 
-	metric_description="Number of Interfaces within the Package" 
+	metric_description="Number of interfaces within the package" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NINP">
 </metric>
 <metric id="org.eclipse.emf.refactor.metrics.uml24.natp" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NATP" 
 	metric_context="Package" 
-	metric_description="Number of Attributes in Classes within the Package" 
+	metric_description="Number of attributes in classes within the package" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NATP">
 </metric>
 <metric id="org.eclipse.emf.refactor.metrics.uml24.nopp" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NOPP" 
 	metric_context="Package" 
-	metric_description="Number of Operations in Classes and Interfaces within the Package" 
+	metric_description="Number of operations in classes and Interfaces within the package" 
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NOPP">
 </metric>

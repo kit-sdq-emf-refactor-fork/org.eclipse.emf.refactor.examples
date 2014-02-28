@@ -21,7 +21,7 @@ import org.eclipse.emf.refactor.refactoring.runtime.DataManagementAdapter;
 public class RefactoringDataManagement extends DataManagementAdapter 
 											implements IHenshinDataManagement {
 
-	private final String SELECTEDEOBJECT = "selectedEObject";
+	protected final String SELECTEDEOBJECT = "selectedEObject";
 		
 	private final String INITIALFILENAME = "rename_attribute_initial";		
 	private final String FINALFILENAME = "rename_attribute_final";	

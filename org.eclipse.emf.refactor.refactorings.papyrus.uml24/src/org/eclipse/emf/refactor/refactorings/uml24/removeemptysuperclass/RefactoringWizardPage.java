@@ -13,9 +13,11 @@ import org.eclipse.emf.refactor.refactoring.runtime.ui.IInputPageButtonCreator;
 import org.eclipse.emf.refactor.refactoring.runtime.ui.InputPageButtonLoader;
 import org.eclipse.ltk.ui.refactoring.UserInputWizardPage;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 
 /**
@@ -66,12 +68,16 @@ public class RefactoringWizardPage extends
 		Composite composite = new Composite(parent, SWT.NONE);
 		GridLayout gl = new GridLayout();
 		gl.numColumns = 2;
-		composite.setLayout(gl);	
+		composite.setLayout(gl);
+				
+		Label newNameLabel = new Label(composite, SWT.NONE);
+		newNameLabel.setText("This refactoring does not have any parameters.");
+		newNameLabel.setEnabled(true);
 		
-		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
-		for(IInputPageButtonCreator creator : buttonCreators){
-			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
-		}
+//		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
+//		for(IInputPageButtonCreator creator : buttonCreators){
+//			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
+//		}
 		
 		setControl(composite);
 	}

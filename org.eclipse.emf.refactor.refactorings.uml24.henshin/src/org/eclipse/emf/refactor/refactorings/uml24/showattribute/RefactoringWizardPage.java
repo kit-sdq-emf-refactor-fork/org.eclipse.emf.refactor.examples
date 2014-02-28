@@ -70,10 +70,10 @@ public class RefactoringWizardPage extends
 		gl.numColumns = 2;
 		composite.setLayout(gl);	
 		
-		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
-		for(IInputPageButtonCreator creator : buttonCreators){
-			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
-		}
+//		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
+//		for(IInputPageButtonCreator creator : buttonCreators){
+//			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
+//		}
 		
 		setControl(composite);
 	}

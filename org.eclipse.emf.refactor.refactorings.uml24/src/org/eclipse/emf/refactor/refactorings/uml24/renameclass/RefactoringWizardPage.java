@@ -6,11 +6,6 @@
  */
  package org.eclipse.emf.refactor.refactorings.uml24.renameclass;
 
-import java.util.List;
-
-import org.eclipse.emf.refactor.refactoring.runtime.ltk.ui.AbstractRefactoringWizard;
-import org.eclipse.emf.refactor.refactoring.runtime.ui.IInputPageButtonCreator;
-import org.eclipse.emf.refactor.refactoring.runtime.ui.InputPageButtonLoader;
 import org.eclipse.ltk.ui.refactoring.UserInputWizardPage;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
@@ -20,6 +15,7 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
+import org.eclipse.uml2.uml.NamedElement;
 
 /**
  * Class for setting model refactoring specific parameters
@@ -112,12 +108,19 @@ public class RefactoringWizardPage extends
 		newNameWidget.setLayoutData(gd);
 		newNameWidget.addListener(SWT.Modify, this);
 		
-		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
-		for(IInputPageButtonCreator creator : buttonCreators){
-			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
-		}
+//		List<IInputPageButtonCreator> buttonCreators = InputPageButtonLoader.iNSTANCE.getInputPageButtonCreatorClasses();
+//		for(IInputPageButtonCreator creator : buttonCreators){
+//			creator.createButton(composite, controller, (AbstractRefactoringWizard)this.getWizard());
+//		}
+		setName();
 		
 		setControl(composite);
+	}
+	
+	private void setName() {
+		RefactoringDataManagement dataManagement = (RefactoringDataManagement) this.controller.getDataManagementObject();
+		NamedElement ne = (NamedElement) dataManagement.getInPortByName(dataManagement.SELECTEDEOBJECT).getValue();
+		newNameWidget.setText(ne.getName());
 	}
 	
 }

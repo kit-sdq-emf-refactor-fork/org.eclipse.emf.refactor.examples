@@ -147,7 +147,8 @@ public final class EqualAttributesinSiblingClasses implements IModelSmellFinder 
 
 	private ArrayList<Class> getAllClasses(Model model) {
 		ArrayList<Class> classes = new ArrayList<Class>();
-		TreeIterator<EObject> iter = model.eResource().getAllContents();
+//		TreeIterator<EObject> iter = model.eResource().getAllContents();
+		TreeIterator<EObject> iter = getRoot(model).eAllContents();
 		while (iter.hasNext()) {
 			EObject eObject = iter.next();
 			if (eObject instanceof Class) {
@@ -155,6 +156,11 @@ public final class EqualAttributesinSiblingClasses implements IModelSmellFinder 
 			}			
 		}		
 		return classes;
+	}
+	
+	private EObject getRoot(EObject eObject) {
+		if (eObject.eContainer() == null) return eObject;
+		else return getRoot(eObject.eContainer());
 	}
 
 	private List<Property> getAllClassAttributes(EObject root) {

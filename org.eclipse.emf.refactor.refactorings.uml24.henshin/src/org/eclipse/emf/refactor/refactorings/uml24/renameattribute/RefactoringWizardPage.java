@@ -15,6 +15,7 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Text;
+import org.eclipse.uml2.uml.NamedElement;
 
 /**
  * Class for setting model refactoring specific parameters
@@ -105,10 +106,16 @@ public class RefactoringWizardPage extends
 				("value of variable 'newName'");
 		newNameWidget.setEnabled(true);
 		newNameWidget.setLayoutData(gd);
-		newNameWidget.addListener(SWT.Modify, this);
-		
+		newNameWidget.addListener(SWT.Modify, this);		
+		setName();
 		
 		setControl(composite);
+	}
+	
+	private void setName() {
+		RefactoringDataManagement dataManagement = (RefactoringDataManagement) this.controller.getDataManagementObject();
+		NamedElement ne = (NamedElement) dataManagement.getInPortByName(dataManagement.SELECTEDEOBJECT).getValue();
+		newNameWidget.setText(ne.getName());
 	}
 	
 }

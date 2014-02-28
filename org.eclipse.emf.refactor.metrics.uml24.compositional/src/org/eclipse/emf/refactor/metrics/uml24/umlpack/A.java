@@ -8,7 +8,7 @@ import org.eclipse.emf.refactor.metrics.interfaces.IMetricCalculator;
 import org.eclipse.emf.refactor.metrics.interfaces.IOperation;
 import org.eclipse.emf.refactor.metrics.operations.Operations;
 
-public class QACP implements IMetricCalculator {
+public class A implements IMetricCalculator {
 	
 	private List<EObject> context;
 	private String metricID1 = "org.eclipse.emf.refactor.metrics.uml24.nacp";
