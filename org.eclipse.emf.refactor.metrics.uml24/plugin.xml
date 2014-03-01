@@ -39,7 +39,29 @@
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="MaxDITC">
 </metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nassc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NASSC" 
+	metric_context="Class" 
+	metric_description="Number of associations with itself" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NASSC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.cbc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.CBC" 
+	metric_context="Class" 
+	metric_description="Number of owned attributes and associations with class type (coupling between classes)" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="CBC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.hagg" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.HAgg" 
+	metric_context="Class" 
+	metric_description="Length of the longest path to the leaves in the aggregation hierarchy" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="HAgg">
+</metric>
 </extension>
+
 <extension point="org.eclipse.emf.refactor.metrics">
 <metric id="org.eclipse.emf.refactor.metrics.uml24.neipo" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlop.NEIPO" 

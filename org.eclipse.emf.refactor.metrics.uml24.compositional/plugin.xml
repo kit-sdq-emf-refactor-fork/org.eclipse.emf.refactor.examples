@@ -12,6 +12,7 @@
             metric_name="A">
       </metric>
    </extension>
+   
    <extension
          point="org.eclipse.emf.refactor.metrics">
       <metric
@@ -89,6 +90,54 @@
 			metric_description="Number of owned features within the class (attributes and operations)" 
 			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 			metric_name="NFEAC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nasc" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NASC" 
+			metric_context="Class" 
+			metric_description="Number of association with other classes or itself" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="NASC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nppac" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NPPAC" 
+			metric_context="Class" 
+			metric_description="Number of private and protected owned attributes" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="NPPAC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nai" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NAI" 
+			metric_context="Class" 
+			metric_description="Number of owned attributes visible to subclasses (public and protected)" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="NAI">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.dam" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.DAM" 
+			metric_context="Class" 
+			metric_description="Ratio between number of private and protected owned attributes and number of owned attributes" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="DAM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.icpar" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.ICPar" 
+			metric_context="Class" 
+			metric_description="Number of parameters within the class having another class or interface as type" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="ICPar">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.apoc" 
+			metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.APOC" 
+			metric_context="Class" 
+			metric_description="Average number of parameters in all owned operations within the class" 
+			metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+			metric_name="APOC">
       </metric>
    </extension>
 

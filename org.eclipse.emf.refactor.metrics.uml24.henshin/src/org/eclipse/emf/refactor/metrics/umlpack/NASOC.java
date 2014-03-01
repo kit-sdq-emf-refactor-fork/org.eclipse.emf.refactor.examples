@@ -12,22 +12,22 @@ import org.eclipse.emf.refactor.metrics.henshin.managers.HenshinManager;
 import org.eclipse.emf.refactor.metrics.interfaces.IMetricCalculator;
 import org.eclipse.emf.refactor.metrics.uml24.henshin.Activator;
 
-public final class NNIACP implements IMetricCalculator {
+public class NASOC implements IMetricCalculator {
 
-	private String transformationPath = getFullPath("transformations/NNIACP.henshin"); 
-		
+	private String transformationPath = getFullPath("transformations/NASOC.henshin"); 
+			
 	private EObject context; 
-		
+			
 	@Override
 	public void setContext(List<EObject> context) {
 		this.context = context.get(0);
-	}	
-		
+	}
+				
 	@Override
 	public double calculate() {
 		return HenshinManager.run(transformationPath, this.context);
 	}
-	
+		
 	private String getFullPath(String transformationPath){
 		URL url = FileLocator.find(Activator.getDefault().getBundle(), new Path(transformationPath), Collections.EMPTY_MAP);
 		URL fileUrl = null;
@@ -39,4 +39,5 @@ public final class NNIACP implements IMetricCalculator {
 		}
 		return 	fileUrl.getPath();
 	}	
+
 }

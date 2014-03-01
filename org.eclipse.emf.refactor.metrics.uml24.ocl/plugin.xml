@@ -132,6 +132,97 @@
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="NAPTC">
 </metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ecatt" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.ECAtt" 
+	metric_context="Class" 
+	metric_description="Number of times the class is externally used as attribute type" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="ECAtt">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ecpar" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.ECPar" 
+	metric_context="Class" 
+	metric_description="Number of times the class is externally used as parameter type" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="ECPar">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nsupc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NSUPC" 
+	metric_context="Class" 
+	metric_description="Number of direct parent classes of the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NSUPC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nsubc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NSUBC" 
+	metric_context="Class" 
+	metric_description="Number of direct child classes of the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NSUBC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nsubc2" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NSUBC2" 
+	metric_context="Class" 
+	metric_description="Number of all children of the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NSUBC2">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.npubac" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NPUBAC" 
+	metric_context="Class" 
+	metric_description="Number of public attributes within the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NPUBAC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.npriac" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NPRIAC" 
+	metric_context="Class" 
+	metric_description="Number of private attributes within the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NPRIAC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nproac" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NPROAC" 
+	metric_context="Class" 
+	metric_description="Number of protected attributes within the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NPROAC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.npacac" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NPACAC" 
+	metric_context="Class" 
+	metric_description="Number of package attributes within the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NPACAC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.nparc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NPARC" 
+	metric_context="Class" 
+	metric_description="Number of parameters in all owned operations within the class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NPARC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.dac" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.DAC" 
+	metric_context="Class" 
+	metric_description="Number of owned attributes having another class as type" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="DAC">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.dac2" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.DAC2" 
+	metric_context="Class" 
+	metric_description="Number of different classes that are used as attribute type" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="DAC2">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ndpc" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NDPC" 
+	metric_context="Class" 
+	metric_description="Number of direct part classes which compose a composite class" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="NDPC">
+</metric>
 </extension>
 
 <extension point="org.eclipse.emf.refactor.metrics">

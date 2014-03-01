@@ -10,4 +10,30 @@
 		metric_name="NNIACP">
 	</metric>
 </extension>
+<extension point="org.eclipse.emf.refactor.metrics">
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.nasoc" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.NASOC" 
+		metric_context="Class" 
+		metric_description="Number of associations with other classes" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="NASOC">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.icparc" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.ICParC" 
+		metric_context="Class" 
+		metric_description="Number of parameters within the class having another class as type" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="ICParC">
+	</metric>
+	<metric 
+		id="org.eclipse.emf.refactor.metrics.uml24.icpari" 
+		metric_calculate_class="org.eclipse.emf.refactor.metrics.umlpack.ICParI" 
+		metric_context="Class" 
+		metric_description="Number of parameters within the class having an interface as type" 
+		metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+		metric_name="ICParI">
+	</metric>
+</extension>
 </plugin>
