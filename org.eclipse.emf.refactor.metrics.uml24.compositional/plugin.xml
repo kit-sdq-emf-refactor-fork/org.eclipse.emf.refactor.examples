@@ -160,6 +160,14 @@
             metric_name="MaxDIT">
       </metric>
       <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.maxhagg"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.MaxHAgg"
+            metric_context="Model"
+            metric_description="Maximum of aggregation trees"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="MaxHAgg">
+      </metric>
+      <metric
             id="org.eclipse.emf.refactor.metrics.uml24.gevsc"
             metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.GEvsC"
             metric_context="Model"
@@ -184,7 +192,7 @@
             metric_name="OPvsC">
       </metric>
       <metric
-            id="agvsc"
+            id="org.eclipse.emf.refactor.metrics.uml24.agvsc"
             metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.AGvsC"
             metric_context="Model"
             metric_description="Ratio between number of aggregations and number of classes in the model"
@@ -192,12 +200,36 @@
             metric_name="AGvsC">
       </metric>
       <metric
-            id="asvsc"
+            id="org.eclipse.emf.refactor.metrics.uml24.asvsc"
             metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.ASvsC"
             metric_context="Model"
             metric_description="Ratio between number of associations and number of classes in the model"
             metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
             metric_name="ASvsC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ntdm"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NTDM"
+            metric_context="Model"
+            metric_description="Number of class type dependencies in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NTDM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ndepm"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.NDEPM"
+            metric_context="Model"
+            metric_description="Number of class dependencies in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NDEPM">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.depvsc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlmodel.DEPvsC"
+            metric_context="Model"
+            metric_description="Ratio between number of class dependencies and number of classes in the model"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="DEPvsC">
       </metric>
    </extension>
    
