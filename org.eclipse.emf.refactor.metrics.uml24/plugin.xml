@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
+
 <extension point="org.eclipse.emf.refactor.metrics">
 <metric 
 	id="org.eclipse.emf.refactor.metrics.uml24.nacp" 
@@ -16,7 +17,29 @@
 	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
 	metric_name="TNCP">
 </metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ca" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.Ca" 
+	metric_context="Package" 
+	metric_description="Afferent coupling: Number of classes in other packages which depend on classes within the package" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="Ca">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.ce" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.Ce" 
+	metric_context="Package" 
+	metric_description="Efferent coupling: Number of classes within the package which depend on classes in other packages" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="Ce">
+</metric>
+<metric id="org.eclipse.emf.refactor.metrics.uml24.dnh" 
+	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.DNH" 
+	metric_context="Package" 
+	metric_description="Depth in the nesting hierarchy" 
+	metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML" 
+	metric_name="DNH">
+</metric>
 </extension>
+
 <extension point="org.eclipse.emf.refactor.metrics">
 <metric id="org.eclipse.emf.refactor.metrics.uml24.neatc" 
 	metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlcl.NEATC" 

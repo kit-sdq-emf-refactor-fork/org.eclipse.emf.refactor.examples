@@ -11,6 +11,126 @@
             metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
             metric_name="A">
       </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.tc"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.TC"
+            metric_context="Package"
+            metric_description="Total coupling: afferent coupling + efferent coupling"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="TC">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.i"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.I"
+            metric_context="Package"
+            metric_description="Ratio between efferent coupling and total coupling (instability)"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="I">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ahf"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.AHF"
+            metric_context="Package"
+            metric_description="Attribute hiding factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="AHF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.aif"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.AIF"
+            metric_context="Package"
+            metric_description="Attribute inheritance factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="AIF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ohf"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.OHF"
+            metric_context="Package"
+            metric_description="Operation hiding factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="OHF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.oif"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.OIF"
+            metric_context="Package"
+            metric_description="Operation inheritance factor"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="OIF">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.navcp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NAVCP"
+            metric_context="Package"
+            metric_description="Ratio between number of associations and number of classes within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NAVCP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ncap"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NCAP"
+            metric_context="Package"
+            metric_description="Number of classes and associations within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NCAP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ntctp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NTCTP"
+            metric_context="Package"
+            metric_description="Number of times classes within the package are used as attribute and association end types from outside the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NTCTP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nttcp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NTTCP"
+            metric_context="Package"
+            metric_description="Number of times classes within the package use classes in other packages as attribute and association end type"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NTTCP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nitrp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NITRP"
+            metric_context="Package"
+            metric_description="Number of internal class type relationships within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NITRP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.nicrp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NICRP"
+            metric_context="Package"
+            metric_description="Number of internal relationships between classes within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NICRP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.h"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.H"
+            metric_context="Package"
+            metric_description="Relational cohesion"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="H">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ndcop"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NDCOP"
+            metric_context="Package"
+            metric_description="Number of dependencies of classes in other packages on classes within the package"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NDCOP">
+      </metric>
+      <metric
+            id="org.eclipse.emf.refactor.metrics.uml24.ndocp"
+            metric_calculate_class="org.eclipse.emf.refactor.metrics.uml24.umlpack.NDOCP"
+            metric_context="Package"
+            metric_description="Number of dependencies of classes within the package on classes in other packages"
+            metric_metamodel="http://www.eclipse.org/uml2/4.0.0/UML"
+            metric_name="NDOCP">
+      </metric>
    </extension>
    
    <extension

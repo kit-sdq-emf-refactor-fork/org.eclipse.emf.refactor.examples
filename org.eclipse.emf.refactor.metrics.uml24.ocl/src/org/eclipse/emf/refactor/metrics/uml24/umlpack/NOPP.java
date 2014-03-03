@@ -9,8 +9,8 @@ import org.eclipse.emf.refactor.metrics.ocl.managers.OCLManager;
 public final class NOPP implements IMetricCalculator {
 
 	private final String expression = 
-		"self.packagedElement -> select(oclIsTypeOf(Class)) -> collect(oclAsType(Class).ownedOperation) -> size() + " +
-		"self.packagedElement -> select(oclIsTypeOf(Interface)) -> collect(oclAsType(Interface).ownedOperation) -> size()";	
+		"self.packagedElement -> select(oclIsTypeOf(Class)) -> collect(oclAsType(Class).ownedOperation) -> size()";// + " +
+		//"self.packagedElement -> select(oclIsTypeOf(Interface)) -> collect(oclAsType(Interface).ownedOperation) -> size()";	
 	private List<EObject> context; 
 		
 	@Override

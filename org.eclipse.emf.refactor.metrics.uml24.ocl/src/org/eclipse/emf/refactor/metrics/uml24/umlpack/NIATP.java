@@ -6,24 +6,25 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.refactor.metrics.interfaces.IMetricCalculator;
 import org.eclipse.emf.refactor.metrics.ocl.managers.OCLManager;
 
-
-public final class NATP implements IMetricCalculator {
+public class NIATP implements IMetricCalculator {
 
 	private final String expression = 
 			"self.packagedElement "
 			+ "-> select(oclIsTypeOf(Class)) "
 			+ "-> collect(oclAsType(Class).ownedAttribute) "
+			+ "-> select(self.packagedElement -> includes(type)) "
 			+ "-> size()";	
 	private List<EObject> context; 
-		
+			
 	@Override
 	public void setContext(List<EObject> context) {
 		this.context = context;
 	}	
-		
+			
 	@Override
 	public double calculate() {	
 		EObject contextObject = context.get(0);
 		return OCLManager.evaluateOCLOnContextObject(contextObject, expression);
 	}
+
 }
