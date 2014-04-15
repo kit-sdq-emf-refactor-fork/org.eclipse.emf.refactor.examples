@@ -10,7 +10,7 @@ import org.eclipse.emf.refactor.smells.core.MetricBasedModelSmellFinderClass;
 
 public class AbstractPackage extends MetricBasedModelSmellFinderClass {
 	
-	private String metricId = "org.eclipse.emf.refactor.metrics.uml24.qacp";
+	private String metricId = "org.eclipse.emf.refactor.metrics.uml24.a";
 	private Metric localMetric = Metric.getMetricInstanceFromId(metricId);
 
 	@Override
