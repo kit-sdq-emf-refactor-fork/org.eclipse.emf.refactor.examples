@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RelationsUML24
+Bundle-SymbolicName: org.eclipse.emf.refactor.relations.uml24;singleton:=true
+Bundle-Version: 0.9.0
+Bundle-Activator: org.eclipse.emf.refactor.relations.uml24.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.refactor.smells.eraser
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy

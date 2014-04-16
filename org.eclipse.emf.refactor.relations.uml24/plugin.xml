@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?eclipse version="3.4"?><plugin>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<extension point="org.eclipse.emf.refactor.smelltorefactorings">
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.unnamedattribute">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.renameattribute"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeparameter"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.createassociatedclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.unnamedclass">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.renameclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.concretesuperclass">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysubclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.unnamedoperation">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.renameoperation"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysubclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.renameclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysuperclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeemptyassociatedclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.largeclass">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.pullupoperation"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractsubclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.moveattribute"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.moveoperation"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.pushdownoperation"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.nospecification">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.createsubclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractsubclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.equalattributesinsiblingclasses">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.hideattribute"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.diamondinheritance">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysubclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removesuperclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysuperclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.henshin.speculativegeneralityclass">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.createsubclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removesuperclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.inlineclass"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.longparameterlist">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeparameter"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject"/>
+</smell_to_refactorings>
+<smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters">
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject"/>
+</smell_to_refactorings>
+</extension>
+<extension point="org.eclipse.emf.refactor.refactoringtosmells">
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.removeemptysubclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.nospecification"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.abstractpackage"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.speculativegeneralityclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.pullupoperation">
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.createsubclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.speculativegeneralityclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.extractsuperclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.concretesuperclass"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.diamondinheritance"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.removesuperclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.pullupattribute">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.equalattributesinsiblingclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.pushdownattribute">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.createassociatedclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.moveoperation">
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.inlineclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.abstractpackage"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.equalattributesinsiblingclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.createsuperclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.concretesuperclass"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.diamondinheritance"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.extractsubclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.renameattribute">
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.equalattributesinsiblingclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.attributenameoverridden"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.extractclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.renameclass">
+<smell id="org.eclipse.emf.refactor.smells.uml24.henshin.equallynamedclasses"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.moveattribute">
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionconstants"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsattributes"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.pushdownoperation">
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.largeclass"/>
+</refactoring_to_smells>
+<refactoring_to_smells id="org.eclipse.emf.refactor.refactorings.uml24.addparameter">
+<smell id="org.eclipse.emf.refactor.smells.uml24.longparameterlist"/>
+<smell id="org.eclipse.emf.refactor.smells.uml24.dataclumpsparameters"/>
+</refactoring_to_smells>
+</extension>
+</plugin>
