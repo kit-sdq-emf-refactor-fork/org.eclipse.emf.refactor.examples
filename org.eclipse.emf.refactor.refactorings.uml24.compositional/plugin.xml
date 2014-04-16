@@ -2,7 +2,7 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         point="comrel.singlefilter">
+         point="org.eclipse.emf.refactor.comrel.singlefilter">
       <singlefilter 
       		class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetFirstClass" 
       		description="" 
@@ -11,7 +11,7 @@
       		namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
 	  </singlefilter>
    </extension>
-<extension point="comrel.multifeature">
+<extension point="org.eclipse.emf.refactor.comrel.multifeature">
 <multifeature 
 	  class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetOwnedAttributes" 
 	  description="" 
@@ -53,7 +53,7 @@
       namespaceUri="http://www.eclipse.org/uml2/4.0.0/UML">
 </multifeature>
 </extension>
-<extension point="comrel.singlefeature">
+<extension point="org.eclipse.emf.refactor.comrel.singlefeature">
 <singlefeature 
 	  class="org.eclipse.emf.refactor.refactorings.uml24.compositional.helper.GetAssociatedClass" 
 	  description="" 
