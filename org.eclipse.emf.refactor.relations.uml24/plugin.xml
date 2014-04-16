@@ -106,7 +106,7 @@
 <smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.primitiveobsessionprimitivetype">
 <refactoring id="org.eclipse.emf.refactor.refactorings.uml24.removeparameter"/>
 <refactoring id="org.eclipse.emf.refactor.refactorings.uml24.introduceparameterobject"/>
-<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.createassociatedclass"/>
+<refactoring id="org.eclipse.emf.refactor.refactorings.uml24.extractclass"/>
 </smell_to_refactorings>
 <smell_to_refactorings id="org.eclipse.emf.refactor.smells.uml24.unnamedclass">
 <refactoring id="org.eclipse.emf.refactor.refactorings.uml24.renameclass"/>
