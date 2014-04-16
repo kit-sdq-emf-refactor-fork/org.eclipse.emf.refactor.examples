@@ -10,7 +10,7 @@ public class NINPO implements IMetricCalculator {
 
 	private final String expression = 
 			"self.ownedParameter -> " +
-			"select(direction = uml::ParameterDirectionKind::in) " +
+			"select(direction = uml::ParameterDirectionKind::_in) " +
 			"-> size()";	
 	private List<EObject> context; 
 			
