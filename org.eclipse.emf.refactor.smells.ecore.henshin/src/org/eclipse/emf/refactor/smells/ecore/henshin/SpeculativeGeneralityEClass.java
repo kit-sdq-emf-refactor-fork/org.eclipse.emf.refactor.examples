@@ -11,29 +11,25 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.refactor.smells.henshin.managers.HenshinRuntimeManager;
 import org.eclipse.emf.refactor.smells.interfaces.IModelSmellFinder;
 
-
 public final class SpeculativeGeneralityEClass implements IModelSmellFinder {
-	
-	private final String transformationPath = "transformations/";
-	private final String henshinFileName = "speculative.henshin";
 
-	@Override
-	public LinkedList<LinkedList<EObject>> findSmell(EObject root) {
-		String fullPath = getFullPath(transformationPath + henshinFileName);
-		return HenshinRuntimeManager.run(root, fullPath);
-	}
-	
-	private String getFullPath(String transformationPath){
-		URL url = FileLocator.find(Activator.getDefault().getBundle(), 
-				new Path(transformationPath), Collections.EMPTY_MAP);
-		URL fileUrl = null;
-		try {
-			fileUrl = FileLocator.toFileURL(url);
-		}
-		catch (IOException e) {
-			e.printStackTrace();
-		}
-		return 	fileUrl.getPath();
-	}
-	
+    private final String transformationPath = "transformations/";
+    private final String henshinFileName = "speculative.henshin";
+
+    @Override
+    public LinkedList<LinkedList<EObject>> findSmell(EObject root) {
+        String fullPath = getFullPath(transformationPath + henshinFileName);
+        return HenshinRuntimeManager.run(root, fullPath);
+    }
+
+    private String getFullPath(String transformationPath) {
+        URL url = FileLocator.find(Activator.getDefault().getBundle(), new Path(transformationPath), Collections.emptyMap());
+        URL fileUrl = null;
+        try {
+            fileUrl = FileLocator.toFileURL(url);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return fileUrl.getPath();
+    }
 }
